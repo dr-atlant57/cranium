@@ -18,3 +18,10 @@ Human experience → recognition → understanding → self-observation → Star
 
 ## Epistemic discipline
 CRANIUM separates observed, measured, reported and hypothesis-level information.
+
+
+## International
+CRANIUM is available through localized static HTML routes for English, Russian, German, French, Spanish, Italian, Portuguese, Turkish, Arabic, Chinese, Japanese and Korean. Each language preserves the same semantic architecture while adapting the human-facing language.
+
+## Education
+/education/ and /en/education/ /ru/education/ /de/education/ /fr/education/ /es/education/ /it/education/ /pt/education/ /tr/education/ /ar/education/ /zh/education/ /ja/education/ /ko/education/
