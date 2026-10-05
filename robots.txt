@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cranium.systems/sitemap.xml
