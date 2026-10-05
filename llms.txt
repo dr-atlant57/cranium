@@ -1,0 +1,20 @@
+# CRANIUM
+
+CRANIUM is a human-first system connecting lived experience with observation, comparison and continuity.
+
+## Core flow
+Human experience → recognition → understanding → self-observation → Start → TwinMind → context/state/history/pattern → next state.
+
+## Key concepts
+- Head and neck configuration
+- Cranio-cervical relationship
+- C0–C1
+- Primordocciput — The Primary Cranial Reference
+- OBSERVE → CALIBRATE → IDENTIFY → OPTIMIZE → VERIFY
+- TwinMind continuity
+
+## Entry routes
+/experience/ /how-it-works/ /head-and-neck/ /c0-c1/ /primordocciput/ /method/ /technology/ /cases/ /logbook/ /twinmind/ /your-cranium/ /start/ /explore/
+
+## Epistemic discipline
+CRANIUM separates observed, measured, reported and hypothesis-level information.
