@@ -4,116 +4,126 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#08090b">
-<meta name="description" content="CRANIUM — Head & Neck Optimization. A structural framework for observation, calibration, verification and longitudinal state tracking.">
+<meta name="description" content="CRANIUM — Head & Neck Optimization for people who think, work and live under high cognitive load. A simple human-language approach to head position, neck tension, C0–C1 and restoring a clearer sense of space and capacity.">
+<meta name="keywords" content="CRANIUM, head and neck optimization, C0 C1, atlas, occiput, neck tension, head position, cognitive load, cranio-cervical, Primordocciput">
 <title>CRANIUM — Head & Neck Optimization</title>
 <style>
-:root{--bg:#08090b;--panel:#101216;--panel2:#15181d;--text:#f3f1eb;--muted:#9b9da3;--line:#292d34;--accent:#d8c49a;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(8,9,11,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:18px;letter-spacing:.28em;font-weight:700}.links{display:flex;gap:24px;color:var(--muted);font-size:13px}.links a:hover{color:var(--text)}.hero{min-height:88vh;display:grid;align-items:center;padding:90px 0}.eyebrow{font-size:12px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase}.hero h1{font-size:clamp(56px,10vw,128px);line-height:.88;letter-spacing:-.055em;margin:22px 0;max-width:1000px}.hero p{font-size:clamp(19px,2.2vw,28px);color:#c4c5c8;max-width:720px;margin:0 0 34px}.button{display:inline-flex;border:1px solid #4a4e56;padding:13px 19px;border-radius:999px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.button:hover{border-color:var(--accent);color:var(--accent)}section{padding:105px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.kicker{color:var(--accent);font-size:11px;letter-spacing:.22em;text-transform:uppercase}.title{font-size:clamp(36px,5vw,66px);line-height:1;margin:12px 0 25px;letter-spacing:-.04em}.lead{font-size:19px;color:#b9bbc0;max-width:680px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}.card{background:var(--panel);border:1px solid var(--line);padding:27px;min-height:190px}.num{font-size:12px;color:var(--accent);letter-spacing:.15em}.card h3{font-size:20px;margin:35px 0 10px}.card p{color:var(--muted);font-size:14px}.axis{border:1px solid var(--line);background:linear-gradient(135deg,var(--panel),#0b0d10);padding:35px;margin-top:35px}.axisrow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--line)}.axisrow>div{background:var(--panel);padding:25px}.axisrow strong{display:block;font-size:24px;margin-bottom:7px}.axisrow span{color:var(--muted);font-size:13px}.steps{counter-reset:s}.step{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:27px 0;border-bottom:1px solid var(--line)}.step:before{counter-increment:s;content:"0" counter(s);color:var(--accent);font-size:13px}.step h3{margin:0 0 5px;font-size:22px}.step p{margin:0;color:var(--muted)}.twin{background:var(--panel);border:1px solid var(--line);padding:35px}.status{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}.ready{color:#b8d6bd}.slot{color:var(--accent)}.quote{font-size:clamp(27px,4vw,48px);line-height:1.1;letter-spacing:-.035em;max-width:930px}.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-size:18px}details p{color:var(--muted);max-width:800px}.footer{padding:50px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.small{font-size:12px;color:var(--muted)}@media(max-width:760px){.links{display:none}.wrap{width:min(calc(100% - 28px),var(--max))}.hero{min-height:80vh;padding:70px 0}.grid,.cards,.axisrow{grid-template-columns:1fr}.grid{gap:35px}section{padding:75px 0}.footer{display:block}.footer>*{margin-bottom:10px}.step{grid-template-columns:45px 1fr}}
+:root{--bg:#08090b;--panel:#101216;--text:#f4f1e9;--muted:#a6a7ac;--line:#292d34;--accent:#d8c49a;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(8,9,11,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:18px;font-weight:750;letter-spacing:.28em}.links{display:flex;gap:24px;color:var(--muted);font-size:13px}.links a:hover{color:var(--text)}.hero{min-height:91vh;display:flex;align-items:center;padding:80px 0}.eyebrow,.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(54px,10vw,116px);line-height:.88;letter-spacing:-.055em;max-width:950px;margin:22px 0}.hero p{font-size:clamp(20px,2.5vw,29px);line-height:1.25;color:#c7c7ca;max-width:780px;margin:0 0 34px}.button{display:inline-flex;align-items:center;border:1px solid #50545c;border-radius:999px;padding:13px 19px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--text);cursor:pointer}.button:hover{border-color:var(--accent);color:var(--accent)}section{padding:95px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px}.title{font-size:clamp(38px,5vw,64px);line-height:.98;letter-spacing:-.045em;margin:12px 0 25px}.lead{font-size:21px;line-height:1.42;color:#c0c1c5;max-width:720px}.body{color:var(--muted);font-size:16px;max-width:720px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}.card{background:var(--panel);border:1px solid var(--line);padding:27px;min-height:205px}.card h3{font-size:21px;margin:35px 0 10px}.card p{font-size:14px;color:var(--muted);margin:0}.tag{font-size:11px;letter-spacing:.14em;color:var(--accent)}.human{background:linear-gradient(135deg,#12151a,#0b0d10);border:1px solid var(--line);padding:42px}.human h3{font-size:29px;line-height:1.1;margin:0 0 17px}.human p{font-size:17px;color:#b9bbc0;max-width:760px}.signal{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:35px}.signal>div{background:var(--panel);padding:23px}.signal strong{display:block;font-size:21px;margin-bottom:5px}.signal span{font-size:12px;color:var(--muted)}.steps{margin-top:10px}.step{display:grid;grid-template-columns:55px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}.stepno{color:var(--accent);font-size:12px;letter-spacing:.1em}.step h3{margin:0 0 5px;font-size:21px}.step p{margin:0;color:var(--muted)}.quote{font-size:clamp(29px,4vw,50px);line-height:1.08;letter-spacing:-.035em;max-width:950px}.twin{background:var(--panel);border:1px solid var(--line);padding:32px}.status{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:13px}.ready{color:#b9d4bd}.slot{color:var(--accent)}.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:19px 0}summary{cursor:pointer;font-size:18px}details p{color:var(--muted);max-width:800px}.footer{padding:48px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.small{font-size:12px;color:var(--muted)}@media(max-width:760px){.links{display:none}.wrap{width:min(calc(100% - 28px),var(--max))}.hero{min-height:84vh;padding:65px 0}.grid,.cards,.signal{grid-template-columns:1fr}.grid{gap:32px}section{padding:72px 0}.human{padding:28px}.footer{display:block}.footer>*{display:block;margin:0 0 9px}.step{grid-template-columns:42px 1fr}}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin"><a class="logo" href="#top">CRANIUM</a><nav class="links"><a href="#principle">Principle</a><a href="#architecture">Architecture</a><a href="#method">Method</a><a href="#twinmind">TwinMind</a><a href="#access">Access</a></nav></div></header>
+<header class="nav"><div class="wrap navin"><a class="logo" href="#top">CRANIUM</a><nav class="links"><a href="#why">Why</a><a href="#what">What</a><a href="#method">How</a><a href="#twinmind">TwinMind</a></nav></div></header>
 
 <main id="top">
 <section class="hero"><div class="wrap">
-<div class="eyebrow">Head & Neck Optimization</div>
-<h1>Start at the architecture.</h1>
-<p>CRANIUM is a structural framework for observing, mapping and calibrating the head–neck system before treating downstream effects as isolated problems.</p>
-<a class="button" href="#principle">Explore the architecture</a>
+<div class="eyebrow">CRANIUM · Head & Neck Optimization</div>
+<h1>Your head carries more than you think.</h1>
+<p>When your work is your mind, even a small change in how your head sits on your neck can become something you notice everywhere: tension, effort, fatigue, concentration and the feeling that everything is taking more capacity than it should.</p>
+<a class="button" href="#why">Why CRANIUM</a>
 </div></section>
 
-<section id="principle"><div class="wrap grid">
-<div><div class="kicker">01 / Principle</div><h2 class="title">Find the upstream reference.</h2></div>
-<div><p class="lead">The CRANIUM model begins with geometry: reference axes, spatial relationships, load distribution, movement and compensation. The objective is not to label a symptom. It is to understand the configuration from which observable patterns emerge.</p><p class="small">CRANIUM separates observation, hypothesis, interpretation and verification. A model is not presented as established fact merely because it is useful.</p></div>
-</div></section>
-
-<section id="architecture"><div class="wrap">
-<div class="kicker">02 / Architecture</div><h2 class="title">The head as a reference system.</h2>
-<p class="lead">The skull, cranio-cervical junction and upper cervical region form the first architectural layer in the CRANIUM model.</p>
-<div class="cards">
-<article class="card"><span class="num">01</span><h3>Reference axes</h3><p>Orientation, rotation, translation and spatial relationships are mapped before conclusions are made.</p></article>
-<article class="card"><span class="num">02</span><h3>Cranio-cervical junction</h3><p>The C0–C1 relationship is treated as a primary reference point for the working model.</p></article>
-<article class="card"><span class="num">03</span><h3>Downstream cascade</h3><p>Changes in one segment can be investigated as part of a larger compensatory geometry.</p></article>
+<section id="why"><div class="wrap">
+<div class="kicker">01 / Why people come to CRANIUM</div>
+<h2 class="title">For people who live in their head.</h2>
+<div class="human">
+<h3>You think all day. You work on screens. You solve problems. You carry decisions.</h3>
+<p>For an intellectually loaded person, the head and neck are not just another part of the body. They are the physical environment around the system you use all day: attention, vision, speech, movement and thinking.</p>
+<p>CRANIUM looks at one simple question: <strong>does the way your head is positioned make your system work harder than it needs to?</strong></p>
 </div>
-<div class="axis"><div class="axisrow">
-<div><strong>C0</strong><span>Occipital reference</span></div>
-<div><strong>C1</strong><span>Atlas reference</span></div>
-<div><strong>BODY</strong><span>Downstream architecture</span></div>
-</div></div>
+<div class="signal">
+<div><strong>Focus</strong><span>When concentration feels more expensive.</span></div>
+<div><strong>Screen work</strong><span>Hours with the head forward or fixed.</span></div>
+<div><strong>Tension</strong><span>A neck that rarely feels truly relaxed.</span></div>
+<div><strong>Capacity</strong><span>The sense that there is less room than before.</span></div>
+</div>
 </div></section>
 
 <section><div class="wrap grid">
-<div><div class="kicker">03 / Primordocciput</div><h2 class="title">A hypothesis, not a doctrine.</h2></div>
-<div><p class="lead">The Primordocciput hypothesis proposes that a primary configuration at the cranio-cervical junction may participate in a cascade of compensations through the body.</p><p class="small">This is a research model. CRANIUM keeps the distinction between a proposed mechanism and independently verified evidence explicit.</p></div>
+<div><div class="kicker">02 / The CRANIUM idea</div><h2 class="title">Put the head back where it belongs.</h2></div>
+<div><p class="lead">CRANIUM starts from the head, the upper neck and the relationship between the skull and the first cervical segment.</p><p class="body">In the CRANIUM model, the C0–C1 relationship is the first reference we look at. If that relationship is not well positioned, the neck and the rest of the body may spend time adapting to it.</p><p class="body">The point is not to make you learn anatomy. The point is to give you a simpler experience: <strong>less unnecessary tension, a clearer reference for the head, and a body that does not have to work around the same position all day.</strong></p></div>
+</div></section>
+
+<section id="what"><div class="wrap">
+<div class="kicker">03 / What happens</div><h2 class="title">Relax the neck. Reposition the head. Check the difference.</h2>
+<div class="cards">
+<article class="card"><span class="tag">01 · RELEASE</span><h3>Let the neck stop holding.</h3><p>We use controlled percussion to work with the soft tissues around the head and neck and create a different starting condition.</p></article>
+<article class="card"><span class="tag">02 · REFERENCE</span><h3>Give the head a better reference.</h3><p>The focus is the relationship between the skull and the upper neck, rather than chasing every downstream complaint separately.</p></article>
+<article class="card"><span class="tag">03 · NOTICE</span><h3>Feel and observe what changes.</h3><p>We compare the starting state with the new state: movement, ease, position and the way the person experiences their own head and neck.</p></article>
+</div>
+</div></section>
+
+<section><div class="wrap grid">
+<div><div class="kicker">04 / Primordocciput</div><h2 class="title">The primary cranial reference.</h2></div>
+<div><p class="lead">Primordocciput is the central CRANIUM concept: the skull–atlas relationship is treated as the starting reference from which the rest of the system is understood.</p><p class="body">This is why CRANIUM begins with the head instead of starting at the place where a person happens to feel a problem.</p><p class="body">The deeper scientific and architectural layers exist behind the public experience. A visitor does not need to know them in order to understand what CRANIUM is doing.</p></div>
 </div></section>
 
 <section><div class="wrap">
-<div class="kicker">04 / Structural Cascade</div><h2 class="title">One system. Many visible outputs.</h2>
-<div class="cards">
-<article class="card"><span class="num">VECTOR</span><h3>Orientation</h3><p>Head position and reference vectors establish the starting geometry.</p></article>
-<article class="card"><span class="num">LOAD</span><h3>Compensation</h3><p>Muscular and postural adaptations can be observed as responses within the system.</p></article>
-<article class="card"><span class="num">OUTPUT</span><h3>Expression</h3><p>Visible asymmetry, movement patterns and other observations become outputs to investigate.</p></article>
+<div class="kicker">05 / A simple way to understand it</div>
+<h2 class="title">Think of your body as a system with limited room for unnecessary work.</h2>
+<div class="human">
+<p>If the head is not comfortably organised over the upper neck, the system may need to spend additional effort maintaining position and adapting around it.</p>
+<p>For someone whose day is built around sustained attention, screens, communication and decisions, that additional physical effort can become part of the background load.</p>
+<p><strong>CRANIUM is interested in that background load.</strong> Not in adding another complicated protocol to your life, but in changing the starting configuration and seeing what follows.</p>
 </div>
 </div></section>
 
 <section id="method"><div class="wrap grid">
-<div><div class="kicker">05 / Method</div><h2 class="title">Observe. Map. Calibrate. Verify.</h2><p class="lead">A repeatable workflow keeps the architecture measurable and prevents interpretation from outrunning observation.</p></div>
+<div><div class="kicker">06 / The experience</div><h2 class="title">Four simple steps.</h2><p class="body">The technical system behind CRANIUM is much more sophisticated. Your experience does not need to be.</p></div>
 <div class="steps">
-<div class="step"><div><h3>Observe</h3><p>Capture the current configuration without prematurely naming its cause.</p></div></div>
-<div class="step"><div><h3>Map</h3><p>Represent axes, vectors, relationships and relevant downstream observations.</p></div></div>
-<div class="step"><div><h3>Calibrate</h3><p>Apply the defined structural intervention or configuration change.</p></div></div>
-<div class="step"><div><h3>Verify</h3><p>Compare the resulting state against the initial reference and record what actually changed.</p></div></div>
+<div class="step"><div class="stepno">01</div><div><h3>Look</h3><p>We establish how your head and neck are positioned now.</p></div></div>
+<div class="step"><div class="stepno">02</div><div><h3>Relax</h3><p>We work with the neck and surrounding tissues using controlled percussion.</p></div></div>
+<div class="step"><div class="stepno">03</div><div><h3>Reposition</h3><p>We work with the head–upper-neck relationship as the primary reference.</p></div></div>
+<div class="step"><div class="stepno">04</div><div><h3>Compare</h3><p>We check what is different rather than asking you simply to believe it.</p></div></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="kicker">06 / Evidence</div><h2 class="title">Keep epistemic layers separate.</h2>
-<div class="cards">
-<article class="card"><span class="num">OBSERVATION</span><h3>What was seen</h3><p>Directly recorded geometry, movement, measurements or user-reported experience.</p></article>
-<article class="card"><span class="num">HYPOTHESIS</span><h3>What may explain it</h3><p>A proposed relationship that remains open to testing and revision.</p></article>
-<article class="card"><span class="num">VERIFICATION</span><h3>What changed</h3><p>Repeatable before/after comparison and longitudinal tracking.</p></article>
-</div>
+<div class="kicker">07 / For a cognitively loaded life</div>
+<p class="quote">When your work depends on your brain, your physical setup matters. CRANIUM looks at one of the most important pieces of that setup: the position of the head and the freedom of the neck around it.</p>
 </div></section>
 
 <section id="twinmind"><div class="wrap grid">
-<div><div class="kicker">07 / CRANIUM TwinMind</div><h2 class="title">The cognitive layer for the architecture.</h2><p class="lead">TwinMind is designed to preserve context across time: identity, state, observations, changes, decisions, protocols and the relationships between them.</p></div>
+<div><div class="kicker">08 / CRANIUM TwinMind</div><h2 class="title">The site is the front door. TwinMind is what remembers.</h2><p class="lead">Every person has a history. The next generation of CRANIUM will not make you explain that history from zero every time.</p><p class="body">TwinMind is the cognitive layer behind CRANIUM: identity, previous observations, changes, states, decisions and longitudinal context can become one connected memory.</p></div>
 <div class="twin">
-<div class="status"><span>IDENTITY</span><span class="ready">READY</span></div>
-<div class="status"><span>STATE MODEL</span><span class="ready">READY</span></div>
-<div class="status"><span>OBSERVATION GRAPH</span><span class="ready">READY</span></div>
-<div class="status"><span>CHANGE HISTORY</span><span class="ready">READY</span></div>
-<div class="status"><span>COGNITIVE LAYER</span><span class="slot">CONNECTOR SLOT</span></div>
-<div class="status"><span>API / AGENT</span><span class="slot">CONNECTOR SLOT</span></div>
-<p class="small" style="margin-top:25px">Public interface first. Persistent cognitive infrastructure can be connected without rebuilding the public site.</p>
-<button class="button" id="twinRequest" type="button">Connect TwinMind</button>
+<div class="status"><span>YOUR IDENTITY</span><span class="ready">READY</span></div>
+<div class="status"><span>YOUR CURRENT STATE</span><span class="ready">READY</span></div>
+<div class="status"><span>YOUR OBSERVATIONS</span><span class="ready">READY</span></div>
+<div class="status"><span>YOUR CHANGE HISTORY</span><span class="ready">READY</span></div>
+<div class="status"><span>COGNITIVE MEMORY</span><span class="slot">CONNECTOR SLOT</span></div>
+<div class="status"><span>AI AGENT / API</span><span class="slot">CONNECTOR SLOT</span></div>
+<button class="button" id="twinRequest" type="button" style="margin-top:24px">Connect TwinMind</button>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="kicker">08 / Philosophy</div>
-<p class="quote">The goal is not to force the body into a template. The goal is to reveal the architecture, establish a reference, and observe what changes when the reference changes.</p>
+<div class="kicker">09 / About the deeper system</div>
+<h2 class="title">Simple on the surface. Deep underneath.</h2>
+<p class="lead">CRANIUM has an internal semantic layer: concepts, relationships, states, observations, evidence, protocols and a knowledge graph. None of that complexity needs to be placed in front of a person who simply wants to understand what CRANIUM is.</p>
+<p class="body">The public language is human. The underlying system remains rigorous.</p>
 </div></section>
 
 <section><div class="wrap">
-<div class="kicker">09 / FAQ</div><div class="faq">
-<details><summary>Is CRANIUM a medical system?</summary><p>CRANIUM is presented here as a structural and observational framework, not as a diagnostic or medical-treatment system.</p></details>
-<details><summary>What is the role of C0–C1?</summary><p>Within the CRANIUM working model, C0–C1 is used as an upstream reference for investigating cranio-cervical geometry. The causal interpretation remains a hypothesis where evidence is incomplete.</p></details>
-<details><summary>What is TwinMind?</summary><p>TwinMind is the planned cognitive layer that maintains a longitudinal representation of observations, states, changes and relationships within the CRANIUM architecture.</p></details>
-<details><summary>Why separate observation from interpretation?</summary><p>Because a useful model must remain auditable. What was observed, what was inferred and what was verified should never silently become the same thing.</p></details>
+<div class="kicker">10 / Questions</div><div class="faq">
+<details><summary>What is CRANIUM?</summary><p>CRANIUM is a head and neck optimization system built around the relationship between the skull, the upper neck and the way the head is positioned.</p></details>
+<details><summary>Why start with the head?</summary><p>Because the head is the reference from which we experience the world: seeing, speaking, orienting, concentrating and moving. CRANIUM starts there instead of beginning with isolated downstream complaints.</p></details>
+<details><summary>What is C0–C1?</summary><p>C0 is the occipital part of the skull and C1 is the atlas, the first cervical vertebra. CRANIUM uses their relationship as a primary reference for its work.</p></details>
+<details><summary>Why percussion?</summary><p>Controlled percussion is used as a practical way to work with tension around the head and neck before addressing the head–upper-neck reference.</p></details>
+<details><summary>Do I need to understand the science?</summary><p>No. The deeper architecture exists to make the system coherent. The public experience is deliberately explained in ordinary human language.</p></details>
 </div></div></section>
 
-<section id="access"><div class="wrap grid">
-<div><div class="kicker">10 / Next State</div><h2 class="title">Build the reference system.</h2></div>
-<div><p class="lead">CRANIUM is being developed as an architecture that can evolve from a public knowledge layer into a longitudinal human-state and cognitive system.</p><a class="button" href="mailto:hello@cranium.systems">Request access</a></div>
+<section><div class="wrap">
+<div class="kicker">11 / CRANIUM</div>
+<h2 class="title">Understand less. Experience more.</h2>
+<p class="lead">You do not need to become an architect of your own body. You only need to notice whether changing the starting point changes the way the system feels and works.</p>
 </div></section>
 </main>
 
-<footer><div class="wrap footer"><span>© 2026 CRANIUM</span><span>Head & Neck Optimization</span><span>Observation · Calibration · Verification</span></div></footer>
+<footer><div class="wrap footer"><span>© 2026 CRANIUM</span><span>Head & Neck Optimization</span><span>Human language · Deep architecture · TwinMind</span></div></footer>
 <script>
 document.getElementById('twinRequest').addEventListener('click',function(){
-  window.dispatchEvent(new CustomEvent('cranium-twin-request',{detail:{source:'public-site',status:'connector-requested'}}));
-  this.textContent='TwinMind connector requested';
-  this.disabled=true;
+window.dispatchEvent(new CustomEvent('cranium-twin-request',{detail:{source:'public-site',status:'connector-requested'}}));
+this.textContent='TwinMind connector requested';this.disabled=true;
 });
 </script>
 </body>
