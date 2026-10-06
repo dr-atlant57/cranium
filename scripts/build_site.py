@@ -47,6 +47,49 @@ for lang,d in DATA.items():
  p=ROOT/lang/'start/index.html';s=p.read_text()
  main=f'<main><div class="wrap"><article class="article"><div class="crumbs">CRANIO</div><h1>{esc(d["observe"])}</h1><p class="lead">{esc(d["sections"][0][1])}</p><form data-intake><label for="observation">{esc(d["record"])}</label><textarea id="observation" name="observation" required placeholder="{esc(d["prompt"])}"></textarea><div class="actions"><button class="btn dark" type="submit">{esc(d["start"])}</button></div><p class="status" role="status">{esc(d["offline"])}</p></form><section class="section">{cards(p,lang,[0,4,6])}</section></article></div></main>'
  p.write_text(re.sub(r'<main\b[^>]*>.*?</main>',main,s,flags=re.S))
+# Footer labels and a browsable index expose every published page.
+FOOTER_LABELS=dict(zip(DATA, [
+ ['Sections','Model and research','Languages','Site map'],
+ ['Разделы','Модель и исследования','Языки','Карта сайта'],
+ ['Bereiche','Modell und Forschung','Sprachen','Sitemap'],
+ ['Rubriques','Modèle et recherche','Langues','Plan du site'],
+ ['Secciones','Modelo e investigación','Idiomas','Mapa del sitio'],
+ ['Sezioni','Modello e ricerca','Lingue','Mappa del sito'],
+ ['Seções','Modelo e pesquisa','Idiomas','Mapa do site'],
+ ['Bölümler','Model ve araştırma','Diller','Site haritası'],
+ ['الأقسام','النموذج والبحث','اللغات','خريطة الموقع'],
+ ['栏目','模型与研究','语言','网站地图'],
+ ['セクション','モデルと研究','言語','サイトマップ'],
+ ['섹션','모델 및 연구','언어','사이트맵']]))
+def page_title(f):
+ if f.parent.name=="site-map":
+  lang=f.relative_to(ROOT).parts[0];return FOOTER_LABELS[lang if lang in DATA else "en"][3]
+ match=re.search(r'<h1[^>]*>(.*?)</h1>',f.read_text(),re.S)
+ return html.unescape(re.sub('<[^>]+>','',match.group(1))) if match else f.parent.name
+for language in ['',*DATA]:
+ p=ROOT/(language or '.')/'site-map/index.html';p.parent.mkdir(parents=True,exist_ok=True)
+ label=FOOTER_LABELS[language or 'en'][3]
+ p.write_text(f'<!DOCTYPE html><html lang="{language or "en"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(label)} — CRANIO</title></head><body><header></header><main></main><footer></footer></body></html>')
+all_pages=sorted(f for f in ROOT.rglob('index.html') if f.relative_to(ROOT).as_posix()!='de/index/index.html')
+for language in ['',*DATA]:
+ p=ROOT/(language or '.')/'site-map/index.html';label=FOOTER_LABELS[language or 'en'][3];groups=[]
+ for group in ['',*DATA]:
+  files=[f for f in all_pages if (f.relative_to(ROOT).parts[0] if f.relative_to(ROOT).parts[0] in DATA else '')==group]
+  links=''.join(f'<li><a href="{rel(p,f.parent.relative_to(ROOT).as_posix())}">{esc(page_title(f))}</a></li>' for f in files)
+  groups.append(f'<details class="site-map-group"'+(' open' if group==language else '')+f'><summary>{esc(NAMES.get(group,"CRANIO SYSTEMS"))} · {len(files)}</summary><ul>{links}</ul></details>')
+ main=f'<main><div class="wrap"><article class="article"><h1>{esc(label)}</h1><p>{len(all_pages)}</p>'+''.join(groups)+'</article></div></main>'
+ p.write_text(p.read_text().replace('<main></main>',main))
+def footer(p,lang):
+ d=DATA[lang or 'en'];labels=FOOTER_LABELS[lang or 'en']
+ primary=''.join(f'<a href="{href(p,lang,r)}">{esc(d["nav"][i])}</a>' for i,r in enumerate(ROUTES))
+ deep=[]
+ for route in ['your-cranium','c0-c1','primordocciput','configuration','technology','logbook','start']:
+  target=ROOT/(lang or '.')/route/'index.html'
+  if not target.exists():target=ROOT/'en'/route/'index.html'
+  if target.exists():deep.append(f'<a href="{rel(p,target.parent.relative_to(ROOT).as_posix())}">{esc(page_title(target))}</a>')
+ languages=''.join(f'<a href="{href(p,l)}" lang="{l}" hreflang="{l}">{esc(n)}</a>' for l,n in NAMES.items())
+ return f'<footer><div class="wrap"><div class="footer-grid"><section><h2>{esc(labels[0])}</h2>{primary}</section><section><h2>{esc(labels[1])}</h2>'+''.join(deep)+f'</section><section><h2>{esc(labels[2])}</h2>{languages}</section></div><details class="footer-library"><summary>{esc(d["library"])}</summary>{experience_links(p,lang)}</details><div class="footer-bottom"><span>CRANIO SYSTEMS · <span data-year></span></span><a href="{href(p,lang,"site-map")}">{esc(labels[3])}</a></div></div></footer>'
+
 # Each page has its own static eight-link header. It works without JavaScript.
 ui={l:{k:d[k] for k in ['language','theme','themes','offline']} for l,d in DATA.items()}
 runtime=(ROOT/'scripts/preferences.js').read_text().replace('__UI__',json.dumps(ui,ensure_ascii=False,separators=(',',':')))
@@ -62,7 +105,7 @@ for p in ROOT.rglob('*.html'):
  theme='<select class="control" data-theme-select aria-label="'+esc(d['theme'])+'">'+''.join(f'<option value="{v}">{esc(t)}</option>' for v,t in zip(['system','light','neutral','dark'],d['themes']))+'</select>'
  header=f'<header><nav aria-label="CRANIO"><a class="brand" href="{href(p,lang)}">CRANIO<span class="brand-dot">.SYSTEMS</span></a><div class="preferences">{language}{theme}<a class="start" href="{href(p,lang,"start")}">{esc(d["start"])}</a></div><div class="navlinks">{nav}</div></nav></header>'
  s=re.sub(r'<header\b[^>]*>.*?</header>',header,s,flags=re.S)
- s=re.sub(r'<footer\b[^>]*>.*?</footer>',f'<footer><div class="wrap">CRANIO SYSTEMS · <span data-year></span></div></footer>',s,flags=re.S)
+ s=re.sub(r'<footer\b[^>]*>.*?</footer>',footer(p,lang),s,flags=re.S)
  s=re.sub(r'<script\b[^>]*src="[^"]*app[^"/]*\.js[^"\s]*"[^>]*>\s*</script>','',s)
  s=re.sub(r'<link\b[^>]*rel="stylesheet"[^>]*>','',s)
  s=s.replace('</head>',f'<link rel="stylesheet" href="{rel(p,css_name)}"></head>').replace('</body>',f'<script src="{rel(p,js_name)}"></script></body>')

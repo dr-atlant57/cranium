@@ -32,6 +32,9 @@ for p in root.rglob('*.html'):
   target=(p.parent/v.path).resolve()
   if target.is_dir():target=target/'index.html'
   assert target.exists(),(p,u)
+ footer=re.search(r"<footer.*?</footer>",s,re.S).group(0)
+ assert len(re.findall(r'<a\b',footer))>=50,p
+ assert 'site-map/' in footer or p.parent.name=='site-map',p
  count+=1
 for lang in data:
  for r in ['',*route_names]:
@@ -39,3 +42,10 @@ for lang in data:
   assert len(re.sub('<[^>]+>','',main))>(100 if lang in ['zh','ja','ko'] else 250),(lang,r)
  assert len(list((root/lang/'experience').glob('*/index.html')))==24,lang
 print(f'Static contract: {count} pages; eight translated links per page; 12 complete experience libraries; nonempty core pages; all local assets and links exist.')
+
+canonical={f.resolve() for f in root.rglob("index.html") if f.relative_to(root).as_posix()!="de/index/index.html"}
+for f in [root/"site-map/index.html",*[root/l/"site-map/index.html" for l in data]]:
+ main=re.search(r"<main.*?</main>",f.read_text(),re.S).group(0)
+ targets={(f.parent/urlsplit(u).path/"index.html").resolve() for u in re.findall(r'href="([^"]+)"',main)}
+ assert targets==canonical,(f,len(targets),len(canonical))
+print("Footer links and all 13 complete HTML site maps passed.")
