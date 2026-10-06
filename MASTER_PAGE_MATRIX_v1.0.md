@@ -1,8 +1,8 @@
-# CRANIUM — MASTER PAGE MATRIX v1.0
+# CRANIO — MASTER PAGE MATRIX v1.0
 
 ## Release target
 
-CRANIUM is a multilingual static semantic system.
+CRANIO is a multilingual static semantic system.
 
 - Languages: 12
 - 40 unique localized page types per language
@@ -41,14 +41,14 @@ The 40 unique-page language set consists of 16 core/system pages plus 25 experie
 | 05 | EXPERIENCE | /experience/ | Human experience index |
 | 06 | EXPLORE | /explore/ | System discovery/navigation |
 | 07 | HEAD_NECK | /head-and-neck/ | Head and neck system |
-| 08 | HOW_IT_WORKS | /how-it-works/ | CRANIUM model |
+| 08 | HOW_IT_WORKS | /how-it-works/ | CRANIO model |
 | 09 | LOGBOOK | /logbook/ | Engineering/research log |
 | 10 | METHOD | /method/ | OBSERVE → CALIBRATE → IDENTIFY → OPTIMIZE → VERIFY |
 | 11 | PRIMORDOCCIPUT | /primordocciput/ | Primary cranial reference |
 | 12 | START | /start/ | First action / entry |
 | 13 | TECHNOLOGY | /technology/ | Technology layer |
 | 14 | TWINMIND | /twinmind/ | Continuity layer |
-| 15 | YOUR_CRANIUM | /your-cranium/ | Personal CRANIUM layer |
+| 15 | YOUR_CRANIO | /your-cranium/ | Personal CRANIO layer |
 | 16 | CONFIGURATION | /configuration/ | Configuration as the bridge between experience, state and optimization |
 
 Localized core routes: 16 × 12 = 192, with `/experience/` overlapping E25 and therefore counted once in the unique-page total.
@@ -103,7 +103,7 @@ Localized experience routes: 25 × 12 = 300.
 3. Translations are authored as native static HTML, not runtime translation.
 4. Shared CSS/JS are external assets.
 5. GitHub Pages project path /cranium/ must work.
-6. Future custom domain cranium.systems/ must use the same build.
+6. Future custom domain cranio.systems/ must use the same build.
 7. No /cranium/cranium/ paths.
 8. No root-relative /styles.css or /app.js paths in project deployment.
 9. Every localized page gets canonical + hreflang relationships.

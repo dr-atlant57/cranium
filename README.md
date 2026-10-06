@@ -1,6 +1,6 @@
-# CRANIUM.SYSTEMS
+# CRANIO.SYSTEMS
 
-CRANIUM is a human-first system for understanding the human being as a SYSTEM OF SYSTEMS.
+CRANIO is a human-first system for understanding the human being as a SYSTEM OF SYSTEMS.
 
 ## Core model
 
@@ -13,13 +13,13 @@ Human experience
 → Verification
 → Continuity
 
-CRANIUM uses the cranium as the entry point into a larger systems perspective. The public website starts with what a person experiences, not with anatomy or technical terminology.
+CRANIO uses the cranium as the entry point into a larger systems perspective. The public website starts with what a person experiences, not with anatomy or technical terminology.
 
 ## System of systems
 
 A car, home, computer and business are all systems composed of interacting subsystems. The human being is also a system of systems: biological, mechanical, sensory, cognitive and adaptive.
 
-CRANIUM focuses on human configuration: how interacting systems are organized, observed and changed over time.
+CRANIO focuses on human configuration: how interacting systems are organized, observed and changed over time.
 
 ## Method
 
@@ -37,7 +37,7 @@ Your story should not start from zero every time.
 
 The visitor enters through a real experience and progressively discovers the deeper model.
 
-Experience → CRANIUM model → Method → Observation → TwinMind
+Experience → CRANIO model → Method → Observation → TwinMind
 
 Deep areas include:
 
@@ -51,7 +51,7 @@ Deep areas include:
 - Logbook
 - Education
 - TwinMind
-- Your CRANIUM
+- Your CRANIO
 - Explore
 - Start
 
@@ -59,16 +59,16 @@ Deep areas include:
 
 Primary identity:
 
-CRANIUM.SYSTEMS
+CRANIO.SYSTEMS
 
 Potential semantic nodes:
 
-- CRANIUM.EXPOSED — discovery
-- CRANIUM.OBSERVER — observation and continuity
-- CRANIUM.SCIENCE — research and evidence
-- CRANIUM.WORK — execution
-- CRANIUM.PLACE — physical environment
-- CRANIUM.LIFE — human context
+- CRANIO.EXPOSED — discovery
+- CRANIO.OBSERVER — observation and continuity
+- CRANIO.SCIENCE — research and evidence
+- CRANIO.WORK — execution
+- CRANIO.PLACE — physical environment
+- CRANIO.LIFE — human context
 
 Domains are semantic architecture, not random marketing aliases.
 
@@ -91,7 +91,7 @@ https://dr-atlant57.github.io/cranium/
 
 Future custom domain:
 
-https://cranium.systems/
+https://cranio.systems/
 
 The same repository must work in both environments. Asset and navigation paths must therefore use a coherent base-path strategy.
 
@@ -103,4 +103,12 @@ Deep underneath.
 
 The website is the front door.
 TwinMind is what remembers.
-CRANIUM.SYSTEMS is the system.
+CRANIO.SYSTEMS is the system.
+
+## Rebrand and audit — 2026-10-06
+
+Brand: CRANIO / CRANIO SYSTEMS. Domain: https://cranio.systems/. Repository and historical /your-cranium/ routes are retained for compatibility. Relative links and assets support both the custom domain and GitHub Pages project hosting.
+
+The theme runtime must target button[data-theme], never [data-theme]: the root html element also receives data-theme, and assigning textContent to it erases the entire page.
+
+Content limitations: several translations are partial; localized pages use generic templates; Cases contains a documentation framework rather than published case records; Education has no enrollment or course delivery; TwinMind has no backend, account, or persistent observation history. Start forms report the disconnected state without sending user text.
