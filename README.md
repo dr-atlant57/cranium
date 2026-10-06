@@ -112,3 +112,11 @@ Brand: CRANIO / CRANIO SYSTEMS. Domain: https://cranio.systems/. Repository and 
 The theme runtime must target button[data-theme], never [data-theme]: the root html element also receives data-theme, and assigning textContent to it erases the entire page.
 
 Content limitations: several translations are partial; localized pages use generic templates; Cases contains a documentation framework rather than published case records; Education has no enrollment or course delivery; TwinMind has no backend, account, or persistent observation history. Start forms report the disconnected state without sending user text.
+
+## International navigation and preferences
+
+All public pages expose the same eight translated navigation links. Each of the 12 languages has a complete library of 24 experience detail routes. Core pages and Start are rendered from `content/locales.json` by `python scripts/build_site.py`. The generator keeps the existing deep-page content and produces versioned JS/CSS asset names.
+
+Opening an unlocalized URL chooses the saved manual language, then the first supported browser language, then English. Explicit language URLs remain authoritative. The language selector offers Auto to return to the browser preference. Theme choices are Auto, Light, Neutral and Dark; Auto follows `prefers-color-scheme`, while manual choices persist and do not change when the browser preference changes. Local storage failures do not prevent rendering.
+
+Validation: `node tests/preferences.test.cjs` and `python tests/site_contract.py`.

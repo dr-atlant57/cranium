@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://cranio.systems/</loc></url>
+<url><loc>https://cranio.systems/ar/</loc></url>
 <url><loc>https://cranio.systems/ar/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/ar/cases/</loc></url>
 <url><loc>https://cranio.systems/ar/configuration/</loc></url>
 <url><loc>https://cranio.systems/ar/education/</loc></url>
+<url><loc>https://cranio.systems/ar/experience/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/comfortable-head/</loc></url>
@@ -16,7 +19,6 @@
 <url><loc>https://cranio.systems/ar/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/ar/experience/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/ar/experience/morning-neck/</loc></url>
@@ -32,7 +34,6 @@
 <url><loc>https://cranio.systems/ar/explore/</loc></url>
 <url><loc>https://cranio.systems/ar/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/ar/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/ar/</loc></url>
 <url><loc>https://cranio.systems/ar/logbook/</loc></url>
 <url><loc>https://cranio.systems/ar/method/</loc></url>
 <url><loc>https://cranio.systems/ar/primordocciput/</loc></url>
@@ -42,10 +43,12 @@
 <url><loc>https://cranio.systems/ar/your-cranium/</loc></url>
 <url><loc>https://cranio.systems/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/cases/</loc></url>
+<url><loc>https://cranio.systems/de/</loc></url>
 <url><loc>https://cranio.systems/de/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/de/cases/</loc></url>
 <url><loc>https://cranio.systems/de/configuration/</loc></url>
 <url><loc>https://cranio.systems/de/education/</loc></url>
+<url><loc>https://cranio.systems/de/experience/</loc></url>
 <url><loc>https://cranio.systems/de/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/de/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/de/experience/comfortable-head/</loc></url>
@@ -58,7 +61,6 @@
 <url><loc>https://cranio.systems/de/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/de/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/de/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/de/experience/</loc></url>
 <url><loc>https://cranio.systems/de/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/de/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/de/experience/morning-neck/</loc></url>
@@ -74,7 +76,6 @@
 <url><loc>https://cranio.systems/de/explore/</loc></url>
 <url><loc>https://cranio.systems/de/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/de/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/de/</loc></url>
 <url><loc>https://cranio.systems/de/logbook/</loc></url>
 <url><loc>https://cranio.systems/de/method/</loc></url>
 <url><loc>https://cranio.systems/de/primordocciput/</loc></url>
@@ -83,15 +84,39 @@
 <url><loc>https://cranio.systems/de/twinmind/</loc></url>
 <url><loc>https://cranio.systems/de/your-cranium/</loc></url>
 <url><loc>https://cranio.systems/education/</loc></url>
+<url><loc>https://cranio.systems/en/</loc></url>
 <url><loc>https://cranio.systems/en/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/en/cases/</loc></url>
 <url><loc>https://cranio.systems/en/configuration/</loc></url>
 <url><loc>https://cranio.systems/en/education/</loc></url>
 <url><loc>https://cranio.systems/en/experience/</loc></url>
+<url><loc>https://cranio.systems/en/experience/body-workload/</loc></url>
+<url><loc>https://cranio.systems/en/experience/cognitive-load/</loc></url>
+<url><loc>https://cranio.systems/en/experience/comfortable-head/</loc></url>
+<url><loc>https://cranio.systems/en/experience/eyes-screen/</loc></url>
+<url><loc>https://cranio.systems/en/experience/facial-asymmetry/</loc></url>
+<url><loc>https://cranio.systems/en/experience/head-forward/</loc></url>
+<url><loc>https://cranio.systems/en/experience/head-neck-settle/</loc></url>
+<url><loc>https://cranio.systems/en/experience/head-not-centered/</loc></url>
+<url><loc>https://cranio.systems/en/experience/head-tension/</loc></url>
+<url><loc>https://cranio.systems/en/experience/headache-concentration/</loc></url>
+<url><loc>https://cranio.systems/en/experience/heavy-head/</loc></url>
+<url><loc>https://cranio.systems/en/experience/holding-myself/</loc></url>
+<url><loc>https://cranio.systems/en/experience/jaw-tension/</loc></url>
+<url><loc>https://cranio.systems/en/experience/mental-overload/</loc></url>
+<url><loc>https://cranio.systems/en/experience/morning-neck/</loc></url>
+<url><loc>https://cranio.systems/en/experience/neck-stiffness/</loc></url>
+<url><loc>https://cranio.systems/en/experience/neck-tension/</loc></url>
+<url><loc>https://cranio.systems/en/experience/neck-wont-relax/</loc></url>
+<url><loc>https://cranio.systems/en/experience/one-side-active/</loc></url>
+<url><loc>https://cranio.systems/en/experience/physical-fatigue/</loc></url>
+<url><loc>https://cranio.systems/en/experience/posture-correction/</loc></url>
+<url><loc>https://cranio.systems/en/experience/screen-work/</loc></url>
+<url><loc>https://cranio.systems/en/experience/something-off/</loc></url>
+<url><loc>https://cranio.systems/en/experience/standing-walking/</loc></url>
 <url><loc>https://cranio.systems/en/explore/</loc></url>
 <url><loc>https://cranio.systems/en/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/en/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/en/</loc></url>
 <url><loc>https://cranio.systems/en/logbook/</loc></url>
 <url><loc>https://cranio.systems/en/method/</loc></url>
 <url><loc>https://cranio.systems/en/primordocciput/</loc></url>
@@ -99,10 +124,12 @@
 <url><loc>https://cranio.systems/en/technology/</loc></url>
 <url><loc>https://cranio.systems/en/twinmind/</loc></url>
 <url><loc>https://cranio.systems/en/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/es/</loc></url>
 <url><loc>https://cranio.systems/es/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/es/cases/</loc></url>
 <url><loc>https://cranio.systems/es/configuration/</loc></url>
 <url><loc>https://cranio.systems/es/education/</loc></url>
+<url><loc>https://cranio.systems/es/experience/</loc></url>
 <url><loc>https://cranio.systems/es/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/es/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/es/experience/comfortable-head/</loc></url>
@@ -115,7 +142,6 @@
 <url><loc>https://cranio.systems/es/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/es/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/es/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/es/experience/</loc></url>
 <url><loc>https://cranio.systems/es/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/es/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/es/experience/morning-neck/</loc></url>
@@ -131,7 +157,6 @@
 <url><loc>https://cranio.systems/es/explore/</loc></url>
 <url><loc>https://cranio.systems/es/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/es/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/es/</loc></url>
 <url><loc>https://cranio.systems/es/logbook/</loc></url>
 <url><loc>https://cranio.systems/es/method/</loc></url>
 <url><loc>https://cranio.systems/es/primordocciput/</loc></url>
@@ -139,6 +164,7 @@
 <url><loc>https://cranio.systems/es/technology/</loc></url>
 <url><loc>https://cranio.systems/es/twinmind/</loc></url>
 <url><loc>https://cranio.systems/es/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/experience/</loc></url>
 <url><loc>https://cranio.systems/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/experience/comfortable-head/</loc></url>
@@ -151,7 +177,6 @@
 <url><loc>https://cranio.systems/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/experience/</loc></url>
 <url><loc>https://cranio.systems/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/experience/morning-neck/</loc></url>
@@ -165,10 +190,12 @@
 <url><loc>https://cranio.systems/experience/something-off/</loc></url>
 <url><loc>https://cranio.systems/experience/standing-walking/</loc></url>
 <url><loc>https://cranio.systems/explore/</loc></url>
+<url><loc>https://cranio.systems/fr/</loc></url>
 <url><loc>https://cranio.systems/fr/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/fr/cases/</loc></url>
 <url><loc>https://cranio.systems/fr/configuration/</loc></url>
 <url><loc>https://cranio.systems/fr/education/</loc></url>
+<url><loc>https://cranio.systems/fr/experience/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/comfortable-head/</loc></url>
@@ -181,7 +208,6 @@
 <url><loc>https://cranio.systems/fr/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/fr/experience/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/fr/experience/morning-neck/</loc></url>
@@ -197,7 +223,6 @@
 <url><loc>https://cranio.systems/fr/explore/</loc></url>
 <url><loc>https://cranio.systems/fr/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/fr/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/fr/</loc></url>
 <url><loc>https://cranio.systems/fr/logbook/</loc></url>
 <url><loc>https://cranio.systems/fr/method/</loc></url>
 <url><loc>https://cranio.systems/fr/primordocciput/</loc></url>
@@ -207,11 +232,12 @@
 <url><loc>https://cranio.systems/fr/your-cranium/</loc></url>
 <url><loc>https://cranio.systems/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/</loc></url>
+<url><loc>https://cranio.systems/it/</loc></url>
 <url><loc>https://cranio.systems/it/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/it/cases/</loc></url>
 <url><loc>https://cranio.systems/it/configuration/</loc></url>
 <url><loc>https://cranio.systems/it/education/</loc></url>
+<url><loc>https://cranio.systems/it/experience/</loc></url>
 <url><loc>https://cranio.systems/it/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/it/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/it/experience/comfortable-head/</loc></url>
@@ -224,7 +250,6 @@
 <url><loc>https://cranio.systems/it/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/it/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/it/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/it/experience/</loc></url>
 <url><loc>https://cranio.systems/it/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/it/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/it/experience/morning-neck/</loc></url>
@@ -240,7 +265,6 @@
 <url><loc>https://cranio.systems/it/explore/</loc></url>
 <url><loc>https://cranio.systems/it/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/it/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/it/</loc></url>
 <url><loc>https://cranio.systems/it/logbook/</loc></url>
 <url><loc>https://cranio.systems/it/method/</loc></url>
 <url><loc>https://cranio.systems/it/primordocciput/</loc></url>
@@ -248,10 +272,12 @@
 <url><loc>https://cranio.systems/it/technology/</loc></url>
 <url><loc>https://cranio.systems/it/twinmind/</loc></url>
 <url><loc>https://cranio.systems/it/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/ja/</loc></url>
 <url><loc>https://cranio.systems/ja/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/ja/cases/</loc></url>
 <url><loc>https://cranio.systems/ja/configuration/</loc></url>
 <url><loc>https://cranio.systems/ja/education/</loc></url>
+<url><loc>https://cranio.systems/ja/experience/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/comfortable-head/</loc></url>
@@ -264,7 +290,6 @@
 <url><loc>https://cranio.systems/ja/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/ja/experience/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/ja/experience/morning-neck/</loc></url>
@@ -280,7 +305,6 @@
 <url><loc>https://cranio.systems/ja/explore/</loc></url>
 <url><loc>https://cranio.systems/ja/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/ja/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/ja/</loc></url>
 <url><loc>https://cranio.systems/ja/logbook/</loc></url>
 <url><loc>https://cranio.systems/ja/method/</loc></url>
 <url><loc>https://cranio.systems/ja/primordocciput/</loc></url>
@@ -288,10 +312,12 @@
 <url><loc>https://cranio.systems/ja/technology/</loc></url>
 <url><loc>https://cranio.systems/ja/twinmind/</loc></url>
 <url><loc>https://cranio.systems/ja/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/ko/</loc></url>
 <url><loc>https://cranio.systems/ko/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/ko/cases/</loc></url>
 <url><loc>https://cranio.systems/ko/configuration/</loc></url>
 <url><loc>https://cranio.systems/ko/education/</loc></url>
+<url><loc>https://cranio.systems/ko/experience/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/comfortable-head/</loc></url>
@@ -304,7 +330,6 @@
 <url><loc>https://cranio.systems/ko/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/ko/experience/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/ko/experience/morning-neck/</loc></url>
@@ -320,7 +345,6 @@
 <url><loc>https://cranio.systems/ko/explore/</loc></url>
 <url><loc>https://cranio.systems/ko/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/ko/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/ko/</loc></url>
 <url><loc>https://cranio.systems/ko/logbook/</loc></url>
 <url><loc>https://cranio.systems/ko/method/</loc></url>
 <url><loc>https://cranio.systems/ko/primordocciput/</loc></url>
@@ -331,10 +355,12 @@
 <url><loc>https://cranio.systems/logbook/</loc></url>
 <url><loc>https://cranio.systems/method/</loc></url>
 <url><loc>https://cranio.systems/primordocciput/</loc></url>
+<url><loc>https://cranio.systems/pt/</loc></url>
 <url><loc>https://cranio.systems/pt/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/pt/cases/</loc></url>
 <url><loc>https://cranio.systems/pt/configuration/</loc></url>
 <url><loc>https://cranio.systems/pt/education/</loc></url>
+<url><loc>https://cranio.systems/pt/experience/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/comfortable-head/</loc></url>
@@ -347,7 +373,6 @@
 <url><loc>https://cranio.systems/pt/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/pt/experience/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/pt/experience/morning-neck/</loc></url>
@@ -363,7 +388,6 @@
 <url><loc>https://cranio.systems/pt/explore/</loc></url>
 <url><loc>https://cranio.systems/pt/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/pt/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/pt/</loc></url>
 <url><loc>https://cranio.systems/pt/logbook/</loc></url>
 <url><loc>https://cranio.systems/pt/method/</loc></url>
 <url><loc>https://cranio.systems/pt/primordocciput/</loc></url>
@@ -371,10 +395,12 @@
 <url><loc>https://cranio.systems/pt/technology/</loc></url>
 <url><loc>https://cranio.systems/pt/twinmind/</loc></url>
 <url><loc>https://cranio.systems/pt/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/ru/</loc></url>
 <url><loc>https://cranio.systems/ru/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/ru/cases/</loc></url>
 <url><loc>https://cranio.systems/ru/configuration/</loc></url>
 <url><loc>https://cranio.systems/ru/education/</loc></url>
+<url><loc>https://cranio.systems/ru/experience/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/comfortable-head/</loc></url>
@@ -387,7 +413,6 @@
 <url><loc>https://cranio.systems/ru/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/ru/experience/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/ru/experience/morning-neck/</loc></url>
@@ -403,7 +428,6 @@
 <url><loc>https://cranio.systems/ru/explore/</loc></url>
 <url><loc>https://cranio.systems/ru/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/ru/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/ru/</loc></url>
 <url><loc>https://cranio.systems/ru/logbook/</loc></url>
 <url><loc>https://cranio.systems/ru/method/</loc></url>
 <url><loc>https://cranio.systems/ru/primordocciput/</loc></url>
@@ -413,10 +437,12 @@
 <url><loc>https://cranio.systems/ru/your-cranium/</loc></url>
 <url><loc>https://cranio.systems/start/</loc></url>
 <url><loc>https://cranio.systems/technology/</loc></url>
+<url><loc>https://cranio.systems/tr/</loc></url>
 <url><loc>https://cranio.systems/tr/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/tr/cases/</loc></url>
 <url><loc>https://cranio.systems/tr/configuration/</loc></url>
 <url><loc>https://cranio.systems/tr/education/</loc></url>
+<url><loc>https://cranio.systems/tr/experience/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/comfortable-head/</loc></url>
@@ -429,7 +455,6 @@
 <url><loc>https://cranio.systems/tr/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/tr/experience/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/tr/experience/morning-neck/</loc></url>
@@ -445,7 +470,6 @@
 <url><loc>https://cranio.systems/tr/explore/</loc></url>
 <url><loc>https://cranio.systems/tr/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/tr/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/tr/</loc></url>
 <url><loc>https://cranio.systems/tr/logbook/</loc></url>
 <url><loc>https://cranio.systems/tr/method/</loc></url>
 <url><loc>https://cranio.systems/tr/primordocciput/</loc></url>
@@ -455,10 +479,12 @@
 <url><loc>https://cranio.systems/tr/your-cranium/</loc></url>
 <url><loc>https://cranio.systems/twinmind/</loc></url>
 <url><loc>https://cranio.systems/your-cranium/</loc></url>
+<url><loc>https://cranio.systems/zh/</loc></url>
 <url><loc>https://cranio.systems/zh/c0-c1/</loc></url>
 <url><loc>https://cranio.systems/zh/cases/</loc></url>
 <url><loc>https://cranio.systems/zh/configuration/</loc></url>
 <url><loc>https://cranio.systems/zh/education/</loc></url>
+<url><loc>https://cranio.systems/zh/experience/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/body-workload/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/cognitive-load/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/comfortable-head/</loc></url>
@@ -471,7 +497,6 @@
 <url><loc>https://cranio.systems/zh/experience/headache-concentration/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/heavy-head/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/holding-myself/</loc></url>
-<url><loc>https://cranio.systems/zh/experience/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/jaw-tension/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/mental-overload/</loc></url>
 <url><loc>https://cranio.systems/zh/experience/morning-neck/</loc></url>
@@ -487,7 +512,6 @@
 <url><loc>https://cranio.systems/zh/explore/</loc></url>
 <url><loc>https://cranio.systems/zh/head-and-neck/</loc></url>
 <url><loc>https://cranio.systems/zh/how-it-works/</loc></url>
-<url><loc>https://cranio.systems/zh/</loc></url>
 <url><loc>https://cranio.systems/zh/logbook/</loc></url>
 <url><loc>https://cranio.systems/zh/method/</loc></url>
 <url><loc>https://cranio.systems/zh/primordocciput/</loc></url>

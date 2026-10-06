@@ -1,0 +1,782 @@
+{
+  "en": {
+    "nav": [
+      "For You",
+      "How It Works",
+      "Head & Neck",
+      "Cases",
+      "Method",
+      "Education",
+      "TwinMind",
+      "Explore"
+    ],
+    "start": "Start",
+    "language": "Language",
+    "theme": "Theme",
+    "themes": [
+      "Auto",
+      "Light",
+      "Neutral",
+      "Dark"
+    ],
+    "home": [
+      "When your mind carries the day, your head matters.",
+      "You work with your mind. Your body works with it. Start with what you notice in your head and neck, then explore the context and changes over time."
+    ],
+    "sections": [
+      [
+        "Your experience",
+        "Choose the experience that sounds familiar. Notice when it appears, how long it lasts and what changes it. You do not need an anatomical explanation to begin."
+      ],
+      [
+        "From experience to observation",
+        "Describe what you notice, record the context and compare observations under similar conditions. A change in one moment is a starting point for further observation, not a conclusion about its cause."
+      ],
+      [
+        "Support, position and movement",
+        "Explore how your head and neck feel while sitting, standing, moving and working at a screen. Record position, comfort and effort separately, without forcing a perfect posture."
+      ],
+      [
+        "What a useful record contains",
+        "A case records the starting state, context, actions, subsequent observations and time. Reported experience, measurements and hypotheses must remain distinguishable. This section describes the record format; published cases will be added when available."
+      ],
+      [
+        "Observe → Calibrate → Identify → Optimize → Verify",
+        "Begin with a reference observation. Compare like conditions, identify what can be checked, document an action and observe the result. Keep uncertainty visible and return to observation when the result is unclear."
+      ],
+      [
+        "A learning pathway",
+        "Learn to describe experience, record context, compare states and distinguish observation from interpretation. Professional training and certification are planned pathways; course enrollment is not available on this site yet."
+      ],
+      [
+        "Context across time",
+        "TwinMind is designed to connect experience, context, state, observations and history. Its personal account and persistent history are not connected yet. The website currently explains the model and lets you explore the observation framework."
+      ],
+      [
+        "Choose how deep to go",
+        "Explore the head and neck model, the method, technology and the research logbook. Primordocciput is presented as a research hypothesis. You can return to your own experience at any point."
+      ]
+    ],
+    "next": "Continue exploring",
+    "library": "Experience library",
+    "observe": "Start with an observation",
+    "record": "Write down what you notice",
+    "prompt": "When does it happen? What were you doing? What changes it?",
+    "offline": "TwinMind is not connected yet. Your text has not been sent. Copy it to keep your observations."
+  },
+  "ru": {
+    "nav": [
+      "Для вас",
+      "Как это работает",
+      "Голова и шея",
+      "Кейсы",
+      "Метод",
+      "Образование",
+      "TwinMind",
+      "Исследовать"
+    ],
+    "start": "Начать",
+    "language": "Язык",
+    "theme": "Тема",
+    "themes": [
+      "Авто",
+      "Светлая",
+      "Нейтральная",
+      "Тёмная"
+    ],
+    "home": [
+      "Когда разум несёт нагрузку дня, голова имеет значение.",
+      "Вы работаете разумом. Тело работает вместе с ним. Начните с того, что замечаете в голове и шее, затем исследуйте контекст и изменения во времени."
+    ],
+    "sections": [
+      [
+        "Ваш повседневный опыт",
+        "Выберите знакомое ощущение. Отметьте, когда оно возникает, сколько продолжается и что его меняет. Чтобы начать, не требуется анатомическое объяснение."
+      ],
+      [
+        "От опыта к наблюдению",
+        "Опишите то, что замечаете, зафиксируйте контекст и сравните наблюдения в похожих условиях. Изменение в отдельный момент — повод продолжить наблюдение, а не готовый вывод о причине."
+      ],
+      [
+        "Опора, положение и движение",
+        "Исследуйте ощущения головы и шеи сидя, стоя, в движении и за экраном. Отдельно отмечайте положение, комфорт и усилие, не пытаясь удерживать идеальную позу."
+      ],
+      [
+        "Что содержит полезная запись",
+        "Кейс фиксирует исходное состояние, контекст, действия, последующие наблюдения и время. Личный опыт, измерения и гипотезы должны оставаться различимыми. Здесь описан формат записи; документированные кейсы будут добавляться по мере готовности."
+      ],
+      [
+        "Наблюдать → Калибровать → Определять → Оптимизировать → Проверять",
+        "Начните с исходного наблюдения. Сопоставьте похожие условия, определите, что можно проверить, зафиксируйте действие и наблюдайте результат. Сохраняйте неопределённость и возвращайтесь к наблюдению, когда результат неясен."
+      ],
+      [
+        "Путь обучения",
+        "Учитесь описывать свой опыт, фиксировать контекст, сравнивать состояния и отделять наблюдение от интерпретации. Профессиональная подготовка и сертификация — планируемые направления; запись на программы на сайте пока не подключена."
+      ],
+      [
+        "Контекст во времени",
+        "TwinMind проектируется для связи опыта, контекста, состояния, наблюдений и истории. Личный кабинет и постоянное хранение истории пока не подключены. Сейчас сайт знакомит с моделью и системой наблюдения."
+      ],
+      [
+        "Выберите глубину исследования",
+        "Исследуйте модель головы и шеи, метод, технологии и исследовательский журнал. Primordocciput представлен как исследовательская гипотеза. На любом этапе можно вернуться к собственному опыту."
+      ]
+    ],
+    "next": "Продолжить исследование",
+    "library": "Библиотека состояний",
+    "observe": "Начните с наблюдения",
+    "record": "Запишите то, что замечаете",
+    "prompt": "Когда это возникает? Что вы делали? Что меняет состояние?",
+    "offline": "TwinMind пока не подключён. Текст не отправлен. Скопируйте его, чтобы сохранить свои наблюдения."
+  },
+  "de": {
+    "nav": [
+      "Für Sie",
+      "So funktioniert es",
+      "Kopf & Hals",
+      "Fallberichte",
+      "Methode",
+      "Bildung",
+      "TwinMind",
+      "Entdecken"
+    ],
+    "start": "Starten",
+    "language": "Sprache",
+    "theme": "Darstellung",
+    "themes": [
+      "Automatisch",
+      "Hell",
+      "Neutral",
+      "Dunkel"
+    ],
+    "home": [
+      "Wenn Ihr Geist den Tag trägt, zählt Ihr Kopf.",
+      "Sie arbeiten mit Ihrem Geist. Ihr Körper arbeitet mit. Beginnen Sie mit Ihren Wahrnehmungen in Kopf und Hals und betrachten Sie den Kontext und Veränderungen im Laufe der Zeit."
+    ],
+    "sections": [
+      [
+        "Ihre alltägliche Erfahrung",
+        "Wählen Sie eine vertraute Erfahrung. Halten Sie fest, wann sie auftritt, wie lange sie anhält und was sie verändert. Für den Einstieg brauchen Sie keine anatomische Erklärung."
+      ],
+      [
+        "Von der Erfahrung zur Beobachtung",
+        "Beschreiben Sie Ihre Wahrnehmung, erfassen Sie den Kontext und vergleichen Sie ähnliche Bedingungen. Eine einzelne Veränderung ist ein Anlass für weitere Beobachtung, keine Erklärung ihrer Ursache."
+      ],
+      [
+        "Unterstützung, Haltung und Bewegung",
+        "Beobachten Sie Kopf und Hals im Sitzen, Stehen, in Bewegung und bei Bildschirmarbeit. Notieren Sie Position, Wohlbefinden und Anstrengung getrennt, ohne eine perfekte Haltung zu erzwingen."
+      ],
+      [
+        "Was ein hilfreicher Bericht enthält",
+        "Ein Fallbericht dokumentiert Ausgangszustand, Kontext, Handlungen, spätere Beobachtungen und Zeit. Erfahrungen, Messungen und Hypothesen bleiben getrennt. Hier wird das Dokumentationsformat erklärt; veröffentlichte Fälle folgen, sobald sie verfügbar sind."
+      ],
+      [
+        "Beobachten → Kalibrieren → Identifizieren → Optimieren → Überprüfen",
+        "Beginnen Sie mit einer Ausgangsbeobachtung. Vergleichen Sie ähnliche Bedingungen, bestimmen Sie überprüfbare Aspekte, dokumentieren Sie eine Handlung und beobachten Sie das Ergebnis. Halten Sie Unsicherheit sichtbar."
+      ],
+      [
+        "Ein Lernweg",
+        "Lernen Sie, Erfahrungen zu beschreiben, Kontext festzuhalten, Zustände zu vergleichen und Beobachtung von Interpretation zu unterscheiden. Berufliche Ausbildung und Zertifizierung sind geplante Wege; eine Kursanmeldung ist noch nicht verfügbar."
+      ],
+      [
+        "Kontext über die Zeit",
+        "TwinMind soll Erfahrung, Kontext, Zustand, Beobachtungen und Verlauf verbinden. Persönliche Konten und dauerhafte Speicherung sind noch nicht angeschlossen. Die Website erklärt derzeit das Modell und den Beobachtungsrahmen."
+      ],
+      [
+        "Wählen Sie Ihre Erkundungstiefe",
+        "Erkunden Sie das Kopf-Hals-Modell, die Methode, Technologie und das Forschungsjournal. Primordocciput wird als Forschungshypothese vorgestellt. Sie können jederzeit zu Ihrer eigenen Erfahrung zurückkehren."
+      ]
+    ],
+    "next": "Weiter entdecken",
+    "library": "Erfahrungsbibliothek",
+    "observe": "Mit einer Beobachtung beginnen",
+    "record": "Notieren Sie Ihre Wahrnehmungen",
+    "prompt": "Wann tritt es auf? Was haben Sie getan? Was verändert es?",
+    "offline": "TwinMind ist noch nicht angeschlossen. Ihr Text wurde nicht gesendet. Kopieren Sie ihn, um Ihre Beobachtungen zu behalten."
+  },
+  "fr": {
+    "nav": [
+      "Pour vous",
+      "Comment ça marche",
+      "Tête et cou",
+      "Cas",
+      "Méthode",
+      "Formation",
+      "TwinMind",
+      "Explorer"
+    ],
+    "start": "Commencer",
+    "language": "Langue",
+    "theme": "Thème",
+    "themes": [
+      "Auto",
+      "Clair",
+      "Neutre",
+      "Sombre"
+    ],
+    "home": [
+      "Quand votre esprit porte la journée, votre tête compte.",
+      "Vous travaillez avec votre esprit. Votre corps participe aussi. Partez de ce que vous remarquez dans la tête et le cou, puis explorez le contexte et les changements au fil du temps."
+    ],
+    "sections": [
+      [
+        "Votre expérience quotidienne",
+        "Choisissez une expérience familière. Notez quand elle apparaît, combien de temps elle dure et ce qui la modifie. Aucune explication anatomique n’est nécessaire pour commencer."
+      ],
+      [
+        "De l’expérience à l’observation",
+        "Décrivez ce que vous remarquez, notez le contexte et comparez des conditions similaires. Un changement ponctuel invite à poursuivre l’observation; il ne suffit pas à en établir la cause."
+      ],
+      [
+        "Soutien, position et mouvement",
+        "Observez les sensations de la tête et du cou en position assise, debout, en mouvement et devant un écran. Notez séparément position, confort et effort, sans imposer une posture parfaite."
+      ],
+      [
+        "Le contenu d’un dossier utile",
+        "Un cas décrit l’état initial, le contexte, les actions, les observations suivantes et le temps. Ressentis, mesures et hypothèses restent distincts. Cette page présente le format; les cas documentés seront ajoutés lorsqu’ils seront disponibles."
+      ],
+      [
+        "Observer → Calibrer → Identifier → Optimiser → Vérifier",
+        "Commencez par une observation de référence. Comparez des conditions similaires, identifiez ce qui peut être vérifié, documentez une action et observez le résultat. Gardez les incertitudes visibles."
+      ],
+      [
+        "Un parcours de formation",
+        "Apprenez à décrire une expérience, noter le contexte, comparer les états et distinguer observation et interprétation. Formation professionnelle et certification sont des parcours prévus; l’inscription n’est pas encore disponible."
+      ],
+      [
+        "Le contexte dans le temps",
+        "TwinMind est conçu pour relier expérience, contexte, état, observations et historique. Le compte personnel et le stockage durable ne sont pas encore connectés. Le site présente actuellement le modèle d’observation."
+      ],
+      [
+        "Choisissez votre niveau d’exploration",
+        "Explorez le modèle tête-cou, la méthode, les technologies et le journal de recherche. Primordocciput est présenté comme une hypothèse de recherche. Vous pouvez revenir à votre expérience à tout moment."
+      ]
+    ],
+    "next": "Poursuivre l’exploration",
+    "library": "Bibliothèque des expériences",
+    "observe": "Commencez par une observation",
+    "record": "Notez ce que vous remarquez",
+    "prompt": "Quand cela arrive-t-il? Que faisiez-vous? Qu’est-ce qui le modifie?",
+    "offline": "TwinMind n’est pas encore connecté. Votre texte n’a pas été envoyé. Copiez-le pour conserver vos observations."
+  },
+  "es": {
+    "nav": [
+      "Para ti",
+      "Cómo funciona",
+      "Cabeza y cuello",
+      "Casos",
+      "Método",
+      "Educación",
+      "TwinMind",
+      "Explorar"
+    ],
+    "start": "Comenzar",
+    "language": "Idioma",
+    "theme": "Tema",
+    "themes": [
+      "Auto",
+      "Claro",
+      "Neutro",
+      "Oscuro"
+    ],
+    "home": [
+      "Cuando tu mente sostiene el día, tu cabeza importa.",
+      "Trabajas con tu mente. Tu cuerpo también participa. Empieza por lo que notas en la cabeza y el cuello y explora el contexto y los cambios a lo largo del tiempo."
+    ],
+    "sections": [
+      [
+        "Tu experiencia cotidiana",
+        "Elige una experiencia familiar. Anota cuándo aparece, cuánto dura y qué la modifica. No necesitas una explicación anatómica para empezar."
+      ],
+      [
+        "De la experiencia a la observación",
+        "Describe lo que notas, registra el contexto y compara condiciones similares. Un cambio puntual invita a seguir observando; no permite concluir cuál es su causa."
+      ],
+      [
+        "Apoyo, posición y movimiento",
+        "Observa cómo sientes la cabeza y el cuello al sentarte, estar de pie, moverte y trabajar frente a una pantalla. Registra posición, comodidad y esfuerzo por separado, sin forzar una postura perfecta."
+      ],
+      [
+        "Qué contiene un registro útil",
+        "Un caso documenta el estado inicial, contexto, acciones, observaciones posteriores y tiempo. Las experiencias, mediciones e hipótesis deben distinguirse. Aquí se presenta el formato; los casos documentados se añadirán cuando estén disponibles."
+      ],
+      [
+        "Observar → Calibrar → Identificar → Optimizar → Verificar",
+        "Empieza con una observación de referencia. Compara condiciones similares, identifica qué se puede comprobar, registra una acción y observa el resultado. Mantén visibles las incertidumbres."
+      ],
+      [
+        "Un camino de aprendizaje",
+        "Aprende a describir experiencias, registrar contexto, comparar estados y separar observación e interpretación. La formación profesional y la certificación son itinerarios previstos; la inscripción aún no está disponible."
+      ],
+      [
+        "Contexto a lo largo del tiempo",
+        "TwinMind está diseñado para conectar experiencia, contexto, estado, observaciones e historial. La cuenta personal y el almacenamiento permanente aún no están conectados. El sitio explica el modelo de observación."
+      ],
+      [
+        "Elige cuánto profundizar",
+        "Explora el modelo de cabeza y cuello, el método, la tecnología y el diario de investigación. Primordocciput se presenta como una hipótesis de investigación. Puedes volver a tu experiencia en cualquier momento."
+      ]
+    ],
+    "next": "Seguir explorando",
+    "library": "Biblioteca de experiencias",
+    "observe": "Empieza con una observación",
+    "record": "Anota lo que notas",
+    "prompt": "¿Cuándo ocurre? ¿Qué estabas haciendo? ¿Qué lo modifica?",
+    "offline": "TwinMind aún no está conectado. Tu texto no se ha enviado. Cópialo para conservar tus observaciones."
+  },
+  "it": {
+    "nav": [
+      "Per te",
+      "Come funziona",
+      "Testa e collo",
+      "Casi",
+      "Metodo",
+      "Formazione",
+      "TwinMind",
+      "Esplora"
+    ],
+    "start": "Inizia",
+    "language": "Lingua",
+    "theme": "Tema",
+    "themes": [
+      "Auto",
+      "Chiaro",
+      "Neutro",
+      "Scuro"
+    ],
+    "home": [
+      "Quando la mente sostiene la giornata, la testa conta.",
+      "Lavori con la mente. Anche il corpo partecipa. Parti da ciò che noti nella testa e nel collo, poi esplora il contesto e i cambiamenti nel tempo."
+    ],
+    "sections": [
+      [
+        "La tua esperienza quotidiana",
+        "Scegli un’esperienza familiare. Annota quando compare, quanto dura e cosa la modifica. Per iniziare non serve una spiegazione anatomica."
+      ],
+      [
+        "Dall’esperienza all’osservazione",
+        "Descrivi ciò che noti, registra il contesto e confronta condizioni simili. Un cambiamento isolato invita a continuare l’osservazione, non a concludere quale sia la causa."
+      ],
+      [
+        "Sostegno, posizione e movimento",
+        "Osserva come senti testa e collo da seduto, in piedi, in movimento e davanti allo schermo. Registra separatamente posizione, comfort e sforzo, senza imporre una postura perfetta."
+      ],
+      [
+        "Cosa contiene una registrazione utile",
+        "Un caso documenta stato iniziale, contesto, azioni, osservazioni successive e tempo. Esperienze, misurazioni e ipotesi restano distinte. Qui viene presentato il formato; i casi documentati saranno aggiunti quando disponibili."
+      ],
+      [
+        "Osservare → Calibrare → Identificare → Ottimizzare → Verificare",
+        "Inizia con un’osservazione di riferimento. Confronta condizioni simili, identifica ciò che puoi verificare, documenta un’azione e osserva il risultato. Mantieni visibili le incertezze."
+      ],
+      [
+        "Un percorso di apprendimento",
+        "Impara a descrivere l’esperienza, registrare il contesto, confrontare stati e distinguere osservazione e interpretazione. Formazione professionale e certificazione sono percorsi previsti; le iscrizioni non sono ancora disponibili."
+      ],
+      [
+        "Il contesto nel tempo",
+        "TwinMind è progettato per collegare esperienza, contesto, stato, osservazioni e storia. L’account personale e l’archiviazione permanente non sono ancora collegati. Il sito illustra il modello di osservazione."
+      ],
+      [
+        "Scegli quanto approfondire",
+        "Esplora il modello testa-collo, il metodo, le tecnologie e il diario di ricerca. Primordocciput è presentato come ipotesi di ricerca. Puoi tornare alla tua esperienza in qualsiasi momento."
+      ]
+    ],
+    "next": "Continua a esplorare",
+    "library": "Biblioteca delle esperienze",
+    "observe": "Inizia da un’osservazione",
+    "record": "Annota ciò che noti",
+    "prompt": "Quando succede? Cosa stavi facendo? Cosa lo modifica?",
+    "offline": "TwinMind non è ancora collegato. Il testo non è stato inviato. Copialo per conservare le tue osservazioni."
+  },
+  "pt": {
+    "nav": [
+      "Para você",
+      "Como funciona",
+      "Cabeça e pescoço",
+      "Casos",
+      "Método",
+      "Educação",
+      "TwinMind",
+      "Explorar"
+    ],
+    "start": "Começar",
+    "language": "Idioma",
+    "theme": "Tema",
+    "themes": [
+      "Auto",
+      "Claro",
+      "Neutro",
+      "Escuro"
+    ],
+    "home": [
+      "Quando sua mente sustenta o dia, sua cabeça importa.",
+      "Você trabalha com a mente. Seu corpo participa também. Comece pelo que percebe na cabeça e no pescoço, depois explore o contexto e as mudanças ao longo do tempo."
+    ],
+    "sections": [
+      [
+        "Sua experiência cotidiana",
+        "Escolha uma experiência familiar. Anote quando aparece, quanto dura e o que a modifica. Você não precisa de uma explicação anatômica para começar."
+      ],
+      [
+        "Da experiência à observação",
+        "Descreva o que percebe, registre o contexto e compare condições semelhantes. Uma mudança isolada é um convite para continuar observando, não uma conclusão sobre sua causa."
+      ],
+      [
+        "Apoio, posição e movimento",
+        "Observe como sente a cabeça e o pescoço ao sentar, ficar em pé, se mover e trabalhar diante de uma tela. Registre posição, conforto e esforço separadamente, sem forçar uma postura perfeita."
+      ],
+      [
+        "O que contém um registro útil",
+        "Um caso documenta estado inicial, contexto, ações, observações posteriores e tempo. Experiências, medições e hipóteses permanecem distintas. Aqui está o formato; casos documentados serão adicionados quando disponíveis."
+      ],
+      [
+        "Observar → Calibrar → Identificar → Otimizar → Verificar",
+        "Comece com uma observação de referência. Compare condições semelhantes, identifique o que pode verificar, documente uma ação e observe o resultado. Mantenha as incertezas visíveis."
+      ],
+      [
+        "Um caminho de aprendizagem",
+        "Aprenda a descrever experiências, registrar contexto, comparar estados e distinguir observação de interpretação. Formação profissional e certificação são caminhos planejados; inscrições ainda não estão disponíveis."
+      ],
+      [
+        "Contexto ao longo do tempo",
+        "TwinMind foi concebido para conectar experiência, contexto, estado, observações e histórico. A conta pessoal e o armazenamento permanente ainda não estão conectados. O site explica o modelo de observação."
+      ],
+      [
+        "Escolha quanto aprofundar",
+        "Explore o modelo de cabeça e pescoço, o método, a tecnologia e o diário de pesquisa. Primordocciput é apresentado como hipótese de pesquisa. Você pode voltar à sua experiência a qualquer momento."
+      ]
+    ],
+    "next": "Continuar explorando",
+    "library": "Biblioteca de experiências",
+    "observe": "Comece com uma observação",
+    "record": "Anote o que percebe",
+    "prompt": "Quando acontece? O que você estava fazendo? O que muda isso?",
+    "offline": "TwinMind ainda não está conectado. Seu texto não foi enviado. Copie-o para guardar suas observações."
+  },
+  "tr": {
+    "nav": [
+      "Sizin için",
+      "Nasıl çalışır",
+      "Baş ve boyun",
+      "Vakalar",
+      "Yöntem",
+      "Eğitim",
+      "TwinMind",
+      "Keşfet"
+    ],
+    "start": "Başla",
+    "language": "Dil",
+    "theme": "Tema",
+    "themes": [
+      "Otomatik",
+      "Açık",
+      "Nötr",
+      "Koyu"
+    ],
+    "home": [
+      "Zihniniz günü taşırken başınız da önemlidir.",
+      "Zihninizle çalışırsınız. Bedeniniz de buna katılır. Baş ve boyunda fark ettiklerinizle başlayın; ardından bağlamı ve zaman içindeki değişimleri keşfedin."
+    ],
+    "sections": [
+      [
+        "Günlük deneyiminiz",
+        "Tanıdık bir deneyim seçin. Ne zaman ortaya çıktığını, ne kadar sürdüğünü ve neyin değiştirdiğini kaydedin. Başlamak için anatomik bir açıklama gerekmez."
+      ],
+      [
+        "Deneyimden gözleme",
+        "Fark ettiklerinizi anlatın, bağlamı kaydedin ve benzer koşulları karşılaştırın. Tek bir değişim, neden hakkında sonuç çıkarmak yerine gözlemi sürdürmek için bir başlangıçtır."
+      ],
+      [
+        "Destek, konum ve hareket",
+        "Otururken, ayakta dururken, hareket ederken ve ekran başında çalışırken baş ve boynu nasıl hissettiğinizi gözlemleyin. Kusursuz bir duruşu zorlamadan konumu, rahatlığı ve çabayı ayrı kaydedin."
+      ],
+      [
+        "Yararlı bir kaydın içeriği",
+        "Bir vaka başlangıç durumunu, bağlamı, eylemleri, sonraki gözlemleri ve zamanı belgeler. Deneyimler, ölçümler ve hipotezler ayrı tutulur. Bu sayfa kayıt biçimini açıklar; belgelenmiş vakalar hazır olduğunda eklenecektir."
+      ],
+      [
+        "Gözlemle → Kalibre et → Belirle → Optimize et → Doğrula",
+        "Bir referans gözlemle başlayın. Benzer koşulları karşılaştırın, kontrol edilebilecek noktaları belirleyin, bir eylemi belgeleyin ve sonucu gözlemleyin. Belirsizlikleri görünür tutun."
+      ],
+      [
+        "Öğrenme yolu",
+        "Deneyimi anlatmayı, bağlamı kaydetmeyi, durumları karşılaştırmayı ve gözlemi yorumdan ayırmayı öğrenin. Mesleki eğitim ve sertifikasyon planlanmaktadır; kurs kaydı henüz açık değildir."
+      ],
+      [
+        "Zaman içinde bağlam",
+        "TwinMind deneyimi, bağlamı, durumu, gözlemleri ve geçmişi birleştirmek için tasarlanmıştır. Kişisel hesap ve kalıcı kayıt henüz bağlı değildir. Site şu anda gözlem modelini tanıtır."
+      ],
+      [
+        "Keşfin derinliğini seçin",
+        "Baş ve boyun modelini, yöntemi, teknolojiyi ve araştırma günlüğünü keşfedin. Primordocciput bir araştırma hipotezi olarak sunulur. İstediğiniz zaman kendi deneyiminize dönebilirsiniz."
+      ]
+    ],
+    "next": "Keşfetmeye devam et",
+    "library": "Deneyim kütüphanesi",
+    "observe": "Bir gözlemle başlayın",
+    "record": "Fark ettiklerinizi yazın",
+    "prompt": "Ne zaman oluyor? Ne yapıyordunuz? Neler değiştiriyor?",
+    "offline": "TwinMind henüz bağlı değil. Metniniz gönderilmedi. Gözlemlerinizi saklamak için kopyalayın."
+  },
+  "ar": {
+    "nav": [
+      "من أجلك",
+      "كيف يعمل",
+      "الرأس والرقبة",
+      "الحالات",
+      "المنهج",
+      "التعليم",
+      "TwinMind",
+      "استكشف"
+    ],
+    "start": "ابدأ",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "themes": [
+      "تلقائي",
+      "فاتح",
+      "محايد",
+      "داكن"
+    ],
+    "home": [
+      "عندما يحمل ذهنك أعباء اليوم، تصبح حالة رأسك مهمة.",
+      "تعمل بذهنك ويشارك جسدك في هذا العمل. ابدأ بما تلاحظه في الرأس والرقبة، ثم استكشف السياق والتغيرات مع مرور الوقت."
+    ],
+    "sections": [
+      [
+        "تجربتك اليومية",
+        "اختر تجربة مألوفة. سجّل وقت ظهورها ومدتها وما يغيّرها. لا تحتاج إلى تفسير تشريحي لكي تبدأ."
+      ],
+      [
+        "من التجربة إلى الملاحظة",
+        "صِف ما تلاحظه، وسجّل السياق، وقارن بين ظروف متشابهة. التغير في لحظة واحدة يدعوك لمواصلة الملاحظة، ولا يكفي لاستنتاج السبب."
+      ],
+      [
+        "الدعم والوضعية والحركة",
+        "لاحظ إحساسك بالرأس والرقبة أثناء الجلوس والوقوف والحركة والعمل أمام الشاشة. سجّل الوضعية والراحة والجهد بشكل منفصل، دون فرض وضعية مثالية."
+      ],
+      [
+        "محتوى السجل المفيد",
+        "توثّق الحالة الوضع الأولي والسياق والإجراءات والملاحظات اللاحقة والزمن. تبقى التجارب والقياسات والفرضيات منفصلة. تشرح هذه الصفحة صيغة التوثيق؛ ستُضاف الحالات الموثّقة عند توفرها."
+      ],
+      [
+        "لاحظ ← عاير ← حدّد ← حسّن ← تحقّق",
+        "ابدأ بملاحظة مرجعية. قارن ظروفاً متشابهة، وحدّد ما يمكن التحقق منه، ووثّق إجراءً ثم لاحظ النتيجة. أبقِ جوانب عدم اليقين واضحة."
+      ],
+      [
+        "مسار للتعلّم",
+        "تعلّم وصف التجربة وتسجيل السياق ومقارنة الحالات وفصل الملاحظة عن التفسير. التدريب المهني والشهادات مسارات مخطط لها؛ التسجيل في البرامج غير متاح بعد."
+      ],
+      [
+        "السياق عبر الزمن",
+        "صُمّم TwinMind لربط التجربة والسياق والحالة والملاحظات والسجل. الحساب الشخصي والتخزين الدائم غير متصلين بعد. يشرح الموقع حالياً نموذج الملاحظة."
+      ],
+      [
+        "اختر عمق الاستكشاف",
+        "استكشف نموذج الرأس والرقبة والمنهج والتكنولوجيا وسجل البحث. يُقدَّم Primordocciput بوصفه فرضية بحثية. يمكنك العودة إلى تجربتك الشخصية في أي وقت."
+      ]
+    ],
+    "next": "واصل الاستكشاف",
+    "library": "مكتبة التجارب",
+    "observe": "ابدأ بملاحظة",
+    "record": "اكتب ما تلاحظه",
+    "prompt": "متى يحدث؟ ماذا كنت تفعل؟ ما الذي يغيّره؟",
+    "offline": "TwinMind غير متصل بعد. لم يُرسل النص. انسخه للاحتفاظ بملاحظاتك."
+  },
+  "zh": {
+    "nav": [
+      "适合你",
+      "工作原理",
+      "头部与颈部",
+      "案例",
+      "方法",
+      "教育",
+      "TwinMind",
+      "探索"
+    ],
+    "start": "开始",
+    "language": "语言",
+    "theme": "主题",
+    "themes": [
+      "自动",
+      "浅色",
+      "中性",
+      "深色"
+    ],
+    "home": [
+      "当思维承担一天的工作时，头部状态同样重要。",
+      "你用思维工作，身体也参与其中。从头部与颈部的日常感受开始，再了解发生情境以及随时间出现的变化。"
+    ],
+    "sections": [
+      [
+        "你的日常体验",
+        "选择一种熟悉的体验。记录它何时出现、持续多久，以及哪些因素会改变它。开始观察不需要先给出解剖学解释。"
+      ],
+      [
+        "从体验到观察",
+        "描述你的感受，记录情境，并在相似条件下比较观察结果。某一时刻的变化是继续观察的起点，不能单凭这一变化判断原因。"
+      ],
+      [
+        "支撑、位置与运动",
+        "观察坐着、站立、活动和屏幕工作时头部与颈部的感受。分别记录位置、舒适度与用力程度，不必强迫自己保持所谓完美姿势。"
+      ],
+      [
+        "有用记录包含什么",
+        "案例应记录初始状态、情境、采取的行动、后续观察以及时间。主观体验、测量与假设必须区分。本页介绍记录格式；有完整资料的案例将陆续加入。"
+      ],
+      [
+        "观察 → 校准 → 识别 → 优化 → 验证",
+        "先记录参考状态，再比较相似条件，确定可以检查的内容，记录行动并观察结果。保留不确定性；结果不清楚时，回到观察。"
+      ],
+      [
+        "学习路径",
+        "学习描述体验、记录情境、比较状态，并区分观察与解释。专业培训和认证属于规划中的路径，目前网站尚未开放课程报名。"
+      ],
+      [
+        "随时间延续的情境",
+        "TwinMind旨在连接体验、情境、状态、观察与历史。个人账户和长期记录功能尚未连接。网站目前提供模型与观察框架的介绍。"
+      ],
+      [
+        "选择探索深度",
+        "探索头颈模型、方法、技术与研究日志。Primordocciput以研究假设的身份呈现。你随时可以回到自己的日常体验。"
+      ]
+    ],
+    "next": "继续探索",
+    "library": "体验库",
+    "observe": "从观察开始",
+    "record": "记录你注意到的内容",
+    "prompt": "何时发生？当时在做什么？哪些因素会改变它？",
+    "offline": "TwinMind尚未连接。文字没有发送，请复制以保留观察记录。"
+  },
+  "ja": {
+    "nav": [
+      "あなたへ",
+      "仕組み",
+      "頭と首",
+      "ケース",
+      "方法",
+      "教育",
+      "TwinMind",
+      "探究"
+    ],
+    "start": "始める",
+    "language": "言語",
+    "theme": "テーマ",
+    "themes": [
+      "自動",
+      "ライト",
+      "ニュートラル",
+      "ダーク"
+    ],
+    "home": [
+      "思考が一日を支えるとき、頭の状態も大切です。",
+      "あなたは思考を使って働き、身体もその活動に関わっています。頭と首について気づいたことから始め、状況や時間とともに起こる変化を観察しましょう。"
+    ],
+    "sections": [
+      [
+        "日常の体験",
+        "身近な体験を選び、いつ起こるか、どのくらい続くか、何によって変わるかを記録します。観察を始めるために解剖学的な説明は必要ありません。"
+      ],
+      [
+        "体験から観察へ",
+        "気づいたことと状況を記録し、似た条件で比較します。一度の変化は観察を続けるきっかけであり、その原因を確定するものではありません。"
+      ],
+      [
+        "支え、位置、動き",
+        "座る、立つ、動く、画面に向かうときの頭と首の感覚を観察します。完璧な姿勢を強いることなく、位置、快適さ、負担を分けて記録しましょう。"
+      ],
+      [
+        "役立つ記録の内容",
+        "ケースには開始時の状態、状況、行動、その後の観察と時間を記録します。体験、測定、仮説を区別します。このページは記録形式を紹介し、資料が整ったケースを順次追加します。"
+      ],
+      [
+        "観察 → 校正 → 特定 → 最適化 → 検証",
+        "基準となる観察から始め、似た条件を比較し、確認できる点を特定します。行動と結果を記録し、不確かな点を残したまま観察を続けます。"
+      ],
+      [
+        "学習の道筋",
+        "体験の記述、状況の記録、状態の比較、観察と解釈の区別を学びます。専門研修と認定は計画段階で、講座の申し込みはまだ利用できません。"
+      ],
+      [
+        "時間を通じた文脈",
+        "TwinMindは体験、状況、状態、観察、履歴をつなぐために設計されています。個人アカウントと継続的な記録はまだ接続されていません。現在のサイトは観察モデルを紹介しています。"
+      ],
+      [
+        "探究の深さを選ぶ",
+        "頭と首のモデル、方法、技術、研究ログを探究できます。Primordocciputは研究仮説として提示されています。いつでも自分の体験に戻ることができます。"
+      ]
+    ],
+    "next": "探究を続ける",
+    "library": "体験ライブラリ",
+    "observe": "観察から始めましょう",
+    "record": "気づいたことを書く",
+    "prompt": "いつ起こりますか？何をしていましたか？何が変化させますか？",
+    "offline": "TwinMindはまだ接続されていません。文章は送信されていません。記録を残すにはコピーしてください。"
+  },
+  "ko": {
+    "nav": [
+      "당신을 위해",
+      "작동 방식",
+      "머리와 목",
+      "사례",
+      "방법",
+      "교육",
+      "TwinMind",
+      "탐색"
+    ],
+    "start": "시작",
+    "language": "언어",
+    "theme": "테마",
+    "themes": [
+      "자동",
+      "밝게",
+      "중립",
+      "어둡게"
+    ],
+    "home": [
+      "생각이 하루를 지탱할 때, 머리의 상태도 중요합니다.",
+      "당신은 정신을 사용해 일하고, 몸도 그 과정에 함께합니다. 머리와 목에서 느끼는 일상적인 경험으로 시작해 상황과 시간에 따른 변화를 살펴보세요."
+    ],
+    "sections": [
+      [
+        "일상적인 경험",
+        "익숙한 경험을 선택하세요. 언제 나타나고 얼마나 지속되며 무엇이 변화시키는지 기록합니다. 관찰을 시작하기 위해 해부학적 설명이 필요한 것은 아닙니다."
+      ],
+      [
+        "경험에서 관찰로",
+        "느끼는 내용을 설명하고 상황을 기록한 뒤 비슷한 조건에서 비교하세요. 한 번의 변화는 관찰을 이어갈 출발점이며, 원인을 확정하는 근거가 아닙니다."
+      ],
+      [
+        "지지, 위치, 움직임",
+        "앉기, 서기, 움직이기, 화면 작업 중 머리와 목의 느낌을 관찰하세요. 완벽한 자세를 억지로 유지하지 말고 위치, 편안함, 힘의 사용을 따로 기록합니다."
+      ],
+      [
+        "유용한 기록의 내용",
+        "사례는 초기 상태, 상황, 행동, 이후 관찰과 시간을 기록합니다. 경험, 측정, 가설은 구분되어야 합니다. 이 페이지는 기록 형식을 설명하며, 자료가 준비된 사례가 추가될 예정입니다."
+      ],
+      [
+        "관찰 → 보정 → 식별 → 최적화 → 검증",
+        "기준 관찰에서 시작하세요. 비슷한 조건을 비교하고 확인할 수 있는 내용을 정한 다음 행동과 결과를 기록합니다. 불확실성을 드러내고 결과가 모호하면 다시 관찰합니다."
+      ],
+      [
+        "학습 과정",
+        "경험을 설명하고 상황을 기록하며 상태를 비교하고 관찰과 해석을 구분하는 방법을 배웁니다. 전문 교육과 인증은 계획된 과정이며, 강좌 등록은 아직 제공되지 않습니다."
+      ],
+      [
+        "시간에 걸친 맥락",
+        "TwinMind는 경험, 상황, 상태, 관찰, 이력을 연결하도록 설계되었습니다. 개인 계정과 지속적인 기록 기능은 아직 연결되지 않았습니다. 현재 사이트는 관찰 모델을 소개합니다."
+      ],
+      [
+        "탐색의 깊이를 선택하세요",
+        "머리와 목 모델, 방법, 기술, 연구 기록을 탐색하세요. Primordocciput는 연구 가설로 제시됩니다. 언제든 자신의 일상 경험으로 돌아갈 수 있습니다."
+      ]
+    ],
+    "next": "계속 탐색하기",
+    "library": "경험 라이브러리",
+    "observe": "관찰로 시작하세요",
+    "record": "느끼는 내용을 적으세요",
+    "prompt": "언제 발생하나요? 무엇을 하고 있었나요? 무엇이 바꾸나요?",
+    "offline": "TwinMind는 아직 연결되지 않았습니다. 글은 전송되지 않았습니다. 관찰 기록을 보관하려면 복사하세요."
+  }
+}
