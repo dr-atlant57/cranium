@@ -1,6 +1,6 @@
-# CRANIUM
+# CRANIO
 
-CRANIUM is a human-first system connecting lived experience with observation, comparison and continuity.
+CRANIO is a human-first system connecting lived experience with observation, comparison and continuity.
 
 ## Core flow
 Human experience → recognition → understanding → self-observation → Start → TwinMind → context/state/history/pattern → next state.
@@ -17,11 +17,11 @@ Human experience → recognition → understanding → self-observation → Star
 /experience/ /how-it-works/ /head-and-neck/ /c0-c1/ /primordocciput/ /method/ /technology/ /cases/ /logbook/ /twinmind/ /your-cranium/ /start/ /explore/
 
 ## Epistemic discipline
-CRANIUM separates observed, measured, reported and hypothesis-level information.
+CRANIO separates observed, measured, reported and hypothesis-level information.
 
 
 ## International
-CRANIUM is available through localized static HTML routes for English, Russian, German, French, Spanish, Italian, Portuguese, Turkish, Arabic, Chinese, Japanese and Korean. Each language preserves the same semantic architecture while adapting the human-facing language.
+CRANIO is available through localized static HTML routes for English, Russian, German, French, Spanish, Italian, Portuguese, Turkish, Arabic, Chinese, Japanese and Korean. Each language preserves the same semantic architecture while adapting the human-facing language.
 
 ## Education
 /education/ and /en/education/ /ru/education/ /de/education/ /fr/education/ /es/education/ /it/education/ /pt/education/ /tr/education/ /ar/education/ /zh/education/ /ja/education/ /ko/education/
