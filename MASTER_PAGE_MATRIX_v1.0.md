@@ -5,13 +5,13 @@
 CRANIUM is a multilingual static semantic system.
 
 - Languages: 12
-- Localized page families: 40 per language
+- 40 unique localized page types per language
 - x-default root entry: 1
 - Target HTML pages: 481
 
 Formula: 40 × 12 + 1 = 481
 
-The 40-page language set consists of 15 core/system pages and 25 experience pages.
+The 40 unique-page language set consists of 16 core/system pages plus 25 experience routes, with `/experience/` intentionally serving both the EXPERIENCE core role and the E25 Experience Index role and therefore counted once.
 
 ## Language matrix
 
@@ -30,7 +30,7 @@ The 40-page language set consists of 15 core/system pages and 25 experience page
 | ja | 日本語 | /ja/ |
 | ko | 한국어 | /ko/ |
 
-## CORE / SYSTEM PAGES — 15
+## CORE / SYSTEM PAGES — 16
 
 | # | Semantic ID | Route | Purpose |
 |---:|---|---|---|
@@ -49,8 +49,9 @@ The 40-page language set consists of 15 core/system pages and 25 experience page
 | 13 | TECHNOLOGY | /technology/ | Technology layer |
 | 14 | TWINMIND | /twinmind/ | Continuity layer |
 | 15 | YOUR_CRANIUM | /your-cranium/ | Personal CRANIUM layer |
+| 16 | CONFIGURATION | /configuration/ | Configuration as the bridge between experience, state and optimization |
 
-Localized core pages: 15 × 12 = 180.
+Localized core routes: 16 × 12 = 192, with `/experience/` overlapping E25 and therefore counted once in the unique-page total.
 
 ## EXPERIENCE PAGES — 25
 
@@ -84,12 +85,14 @@ These remain separate semantic/indexable pages. They are not collapsed to reduce
 | E24 | STANDING_WALKING | /experience/standing-walking/ | Head/body feels different standing or walking |
 | E25 | EXPERIENCE_INDEX | /experience/ | Index of all experience entries |
 
-Localized experience pages: 25 × 12 = 300.
+Localized experience routes: 25 × 12 = 300.
 
 ## TOTAL
 
-- Localized core: 180
-- Localized experience: 300
+- Localized core routes: 192
+- Localized experience routes: 300
+- Overlap: `/experience/` counted once
+- Unique localized pages: 192 + 300 − 12 = 480
 - x-default root: 1
 - TOTAL TARGET: 481 HTML pages
 
@@ -120,7 +123,7 @@ Localized experience pages: 25 × 12 = 300.
 
 The repository currently contains 153 HTML files. This is an incomplete implementation of this matrix.
 
-The current count is not the target. It reflects uneven localization and the absence of localized copies of the full 25-page Experience family.
+The current count is not the target. It reflects uneven localization, missing Configuration pages, and incomplete copies of the full Experience family.
 
 Build plan:
 
