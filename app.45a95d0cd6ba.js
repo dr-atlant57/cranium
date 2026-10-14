@@ -74,11 +74,21 @@
     link.setAttribute('aria-label', bookingText[0] + ' — CRANIO');
     return link;
   };
-  const navLinks = document.querySelector('header .navlinks');
-  if (navLinks && !navLinks.querySelector('[data-booking]')) {
-    const link = newBookingLink('');
-    link.dataset.booking = 'whatsapp';
-    navLinks.prepend(link);
+  // Upgrade existing header action instead of duplicating navigation links.
+  const headerCTA = document.querySelector('header .start');
+  if (headerCTA) {
+    headerCTA.href = bookingHref;
+    headerCTA.textContent = bookingText[0];
+    headerCTA.target = '_blank';
+    headerCTA.rel = 'noopener noreferrer';
+    headerCTA.setAttribute('aria-label', bookingText[0] + ' — CRANIO');
+  } else {
+    const navLinks = document.querySelector('header .navlinks');
+    if (navLinks && !navLinks.querySelector('[data-booking]')) {
+      const link = newBookingLink('');
+      link.dataset.booking = 'whatsapp';
+      navLinks.prepend(link);
+    }
   }
   const primaryActions = document.querySelector('.hero .actions');
   if (primaryActions) primaryActions.prepend(newBookingLink('btn dark'));
