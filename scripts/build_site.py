@@ -44,6 +44,8 @@ for lang,d in DATA.items():
   related={0:[1,2,6],1:[0,4,6],2:[0,4,3],3:[4,6,7],4:[2,3,5],5:[0,4,7],6:[0,3,4],7:[0,4,5]}[i]
   body+=f'<section class="section"><h2>{esc(d["next"])}</h2>{cards(p,lang,related)}</section><div class="actions"><a class="btn dark" href="{href(p,lang,"start")}">{esc(d["start"])}</a></div>'
   s=re.sub(r'<main\b[^>]*>.*?</main>',f'<main><div class="wrap"><article class="article">{body}</article></div></main>',s,flags=re.S)
+  special=ROOT/'content'/f'page_{lang}_{route}.html'
+  if special.exists():s=re.sub(r'<main\b[^>]*>.*?</main>',special.read_text(),s,flags=re.S)
   s=re.sub(r'<title>.*?</title>',f'<title>{esc(d["nav"][i])} — CRANIO</title>',s,flags=re.S);p.write_text(s)
  # Add the same observation entry to every localized Start page.
  p=ROOT/lang/'start/index.html';s=p.read_text()
@@ -116,7 +118,7 @@ for p in ROOT.rglob('*.html'):
  s=re.sub(r'<script\b[^>]*src="[^"]*app[^"/]*\.js[^"\s]*"[^>]*>\s*</script>','',s)
  s=re.sub(r'<link\b[^>]*rel="stylesheet"[^>]*>','',s)
  s=s.replace('</head>',f'<link rel="stylesheet" href="{rel(p,css_name)}"></head>').replace('</body>',f'<script src="{rel(p,js_name)}"></script></body>')
- if p==ROOT/'index.html' or p in [ROOT/'en/index.html',ROOT/'ru/index.html']:
+ if p==ROOT/'index.html' or p in [ROOT/'en/index.html',ROOT/'ru/index.html',ROOT/'en/how-it-works/index.html',ROOT/'ru/how-it-works/index.html',ROOT/'en/cases/index.html',ROOT/'ru/cases/index.html']:
   s=s.replace('</head>',f'<link rel="stylesheet" href="{rel(p,"commercial.css")}"></head>')
  canonical='https://cranio.systems/'+('' if p.parent==ROOT else p.parent.relative_to(ROOT).as_posix()+'/')
  s=re.sub(r'<link rel="canonical"[^>]*>','',s);s=s.replace('</head>',f'<link rel="canonical" href="{canonical}"></head>')
