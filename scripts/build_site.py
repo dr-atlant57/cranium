@@ -28,6 +28,8 @@ for src in (ROOT/'experience').glob('*/index.html'):
 for lang,d in DATA.items():
  home=ROOT/lang/'index.html';s=home.read_text()
  main=f'<main><div class="wrap"><section class="hero"><div class="eyebrow">CRANIO SYSTEMS</div><h1>{esc(d["home"][0])}</h1><p class="lead">{esc(d["home"][1])}</p><div class="actions"><a class="btn dark" href="{href(home,lang,"experience")}">{esc(d["nav"][0])}</a><a class="btn" href="{href(home,lang,"how-it-works")}">{esc(d["nav"][1])}</a></div></section><section class="section"><h2>{esc(d["library"])}</h2><p class="lead">{esc(d["sections"][0][1])}</p>{experience_links(home,lang,8)}<div class="actions"><a class="btn" href="{href(home,lang,"experience")}">{esc(d["library"])}</a></div></section><section class="section"><h2>{esc(d["sections"][1][0])}</h2><p class="lead">{esc(d["sections"][1][1])}</p>{cards(home,lang,[2,4,6])}</section><section class="section"><h2>{esc(d["nav"][5])}</h2><p class="lead">{esc(d["sections"][5][1])}</p>{cards(home,lang,[3,5,7])}</section></div></main>'
+ template=ROOT/'content'/f'home_{lang}.fragment'
+ if template.exists():main=template.read_text()
  s=re.sub(r'<main\b[^>]*>.*?</main>',main,s,flags=re.S);home.write_text(s)
  for i,route in enumerate(ROUTES):
   p=ROOT/lang/route/'index.html';s=p.read_text();match=re.search(r'<h1[^>]*>(.*?)</h1>',s,re.S)
@@ -42,11 +44,18 @@ for lang,d in DATA.items():
   related={0:[1,2,6],1:[0,4,6],2:[0,4,3],3:[4,6,7],4:[2,3,5],5:[0,4,7],6:[0,3,4],7:[0,4,5]}[i]
   body+=f'<section class="section"><h2>{esc(d["next"])}</h2>{cards(p,lang,related)}</section><div class="actions"><a class="btn dark" href="{href(p,lang,"start")}">{esc(d["start"])}</a></div>'
   s=re.sub(r'<main\b[^>]*>.*?</main>',f'<main><div class="wrap"><article class="article">{body}</article></div></main>',s,flags=re.S)
+  special=ROOT/'content'/f'page_{lang}_{route}.fragment'
+  if special.exists():s=re.sub(r'<main\b[^>]*>.*?</main>',special.read_text(),s,flags=re.S)
   s=re.sub(r'<title>.*?</title>',f'<title>{esc(d["nav"][i])} — CRANIO</title>',s,flags=re.S);p.write_text(s)
  # Add the same observation entry to every localized Start page.
  p=ROOT/lang/'start/index.html';s=p.read_text()
  main=f'<main><div class="wrap"><article class="article"><div class="crumbs">CRANIO</div><h1>{esc(d["observe"])}</h1><p class="lead">{esc(d["sections"][0][1])}</p><form data-intake><label for="observation">{esc(d["record"])}</label><textarea id="observation" name="observation" required placeholder="{esc(d["prompt"])}"></textarea><div class="actions"><button class="btn dark" type="submit">{esc(d["start"])}</button></div><p class="status" role="status">{esc(d["offline"])}</p></form><section class="section">{cards(p,lang,[0,4,6])}</section></article></div></main>'
  p.write_text(re.sub(r'<main\b[^>]*>.*?</main>',main,s,flags=re.S))
+root_template=ROOT/'content/home_root.fragment'
+if root_template.exists():
+ p=ROOT/'index.html';s=p.read_text()
+ s=re.sub(r'<main\b[^>]*>.*?</main>',root_template.read_text(),s,flags=re.S)
+ p.write_text(s)
 # Footer labels and a browsable index expose every published page.
 FOOTER_LABELS=dict(zip(DATA, [
  ['Sections','Model and research','Languages','Site map'],
@@ -109,6 +118,8 @@ for p in ROOT.rglob('*.html'):
  s=re.sub(r'<script\b[^>]*src="[^"]*app[^"/]*\.js[^"\s]*"[^>]*>\s*</script>','',s)
  s=re.sub(r'<link\b[^>]*rel="stylesheet"[^>]*>','',s)
  s=s.replace('</head>',f'<link rel="stylesheet" href="{rel(p,css_name)}"></head>').replace('</body>',f'<script src="{rel(p,js_name)}"></script></body>')
+ if p==ROOT/'index.html' or p in [ROOT/'en/index.html',ROOT/'ru/index.html',ROOT/'en/how-it-works/index.html',ROOT/'ru/how-it-works/index.html',ROOT/'en/cases/index.html',ROOT/'ru/cases/index.html']:
+  s=s.replace('</head>',f'<link rel="stylesheet" href="{rel(p,"commercial.css")}"></head>')
  canonical='https://cranio.systems/'+('' if p.parent==ROOT else p.parent.relative_to(ROOT).as_posix()+'/')
  s=re.sub(r'<link rel="canonical"[^>]*>','',s);s=s.replace('</head>',f'<link rel="canonical" href="{canonical}"></head>')
  # Copied English experience detail links now remain in English.
