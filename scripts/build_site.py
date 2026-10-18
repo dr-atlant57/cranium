@@ -52,7 +52,7 @@ for lang,d in DATA.items():
 root_template=ROOT/'content/home_root.html'
 if root_template.exists():
  p=ROOT/'index.html';s=p.read_text()
- s=re.sub(r'<main\\b[^>]*>.*?</main>',root_template.read_text(),s,flags=re.S)
+ s=re.sub(r'<main\b[^>]*>.*?</main>',root_template.read_text(),s,flags=re.S)
  p.write_text(s)
 # Footer labels and a browsable index expose every published page.
 FOOTER_LABELS=dict(zip(DATA, [
