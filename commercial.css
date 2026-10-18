@@ -58,3 +58,14 @@
 @media(max-width:1050px){.commercial .cr-hero{grid-template-columns:1fr;min-height:auto;padding:68px 0}.commercial .cr-process{max-width:800px}.commercial .cr-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.commercial .cr-concerns{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.commercial .cr-hero{padding:42px 0 55px;gap:32px}.commercial h1{font-size:clamp(36px,9vw,53px)}.commercial h2{font-size:clamp(28px,8vw,38px)}.commercial .cr-concerns,.commercial .cr-steps,.commercial .cr-three,.commercial .cr-prices,.commercial .cr-faq,.commercial .cr-split{grid-template-columns:1fr}.commercial .cr-concern{min-height:72px;padding:17px}.commercial .cr-card{min-height:unset}.commercial .cr-process{padding:24px}.commercial .cr-prices>div{flex-direction:row;align-items:center}.commercial .cr-prices strong{white-space:nowrap;font-size:26px}.commercial .cr-safety{padding:23px;margin-top:34px}.commercial .cr-finale{margin:40px 0 54px}.commercial .cr-actions{align-items:stretch}.commercial .cr-actions>.cr-button{flex:1 1 100%}}
 @media(prefers-reduced-motion:reduce){.commercial .cr-button,.commercial .cr-concern{transition:none}}
+
+/* Detailed practical / case pages */
+.commercial .cr-detail{padding:clamp(48px,7vw,100px) 0 0;max-width:1130px;margin:0 auto}
+.commercial .cr-detail>h1{max-width:16ch;font-size:clamp(40px,5.5vw,73px)}
+.commercial .cr-detail>.cr-lead{max-width:66ch}
+.commercial .cr-detail>.cr-section:first-of-type{margin-top:40px}
+.commercial .cr-detail .cr-section{padding:clamp(48px,6vw,78px) 0}
+.commercial .cr-detail .cr-finale{margin-top:50px}
+.commercial .cr-detail .cr-steps .cr-card{min-height:205px}
+.commercial .cr-detail .cr-safety{padding:32px 38px}
+@media(max-width:680px){.commercial .cr-detail{padding:42px 0 0}.commercial .cr-detail>h1{font-size:clamp(36px,9vw,50px)}.commercial .cr-detail .cr-steps .cr-card{min-height:unset}.commercial .cr-detail .cr-safety{padding:22px}}
