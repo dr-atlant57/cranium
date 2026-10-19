@@ -46,7 +46,15 @@
       location.assign(destination(select.value === 'auto' ? resolveLanguage() : select.value));
     });
   });
-
+  document.querySelectorAll('[data-intake]').forEach(form => {
+    const input = form.querySelector('textarea');
+    const status = form.querySelector('.status');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!input.value.trim()) { input.focus(); return; }
+      status.textContent = UI[locale].offline;
+    });
+  });
   // CRANIO_BOOKING_WHATSAPP: human-confirmed booking channel, no form data is sent automatically.
   const bookingCopy = {
     ru: ['Запись в WhatsApp', 'Здравствуйте! Хочу записаться на сеанс CRANIO по работе с головой и шеей. Подскажите место, стоимость и доступное время.'],
@@ -74,23 +82,50 @@
     link.setAttribute('aria-label', bookingText[0] + ' — CRANIO');
     return link;
   };
-  const navLinks = document.querySelector('header .navlinks');
+  const navLinks = document.querySelector?.('header .navlinks');
   if (navLinks && !navLinks.querySelector('[data-booking]')) {
     const link = newBookingLink('');
     link.dataset.booking = 'whatsapp';
     navLinks.prepend(link);
   }
-  const primaryActions = document.querySelector('.hero .actions');
+  // Accessible native dropdown on small screens. Desktop links remain in the DOM for fallback.
+  const headerBook = document.querySelector?.('header .preferences .start');
+  if (headerBook) {
+    const shortLabels = {ru:'Записаться',en:'Book',de:'Buchen',fr:'Réserver',es:'Reservar',it:'Prenota',pt:'Agendar',tr:'Randevu',ar:'احجز',zh:'预约',ja:'予約',ko:'예약'};
+    headerBook.href = bookingHref;
+    headerBook.target = '_blank';
+    headerBook.rel = 'noopener noreferrer';
+    headerBook.dataset.booking = 'whatsapp';
+    headerBook.textContent = shortLabels[locale] || bookingText[0];
+  }
+  const headerNav = document.querySelector?.('header nav');
+  if (headerNav && navLinks && !headerNav.querySelector('.mobile-menu')) {
+    const menu = document.createElement('details');
+    menu.className = 'mobile-menu';
+    const summary = document.createElement('summary');
+    const menuLabels = {ru:'Меню',en:'Menu',de:'Menü',fr:'Menu',es:'Menú',it:'Menu',pt:'Menu',tr:'Menü',ar:'القائمة',zh:'菜单',ja:'メニュー',ko:'메뉴'};
+    summary.textContent = menuLabels[locale] || 'Menu';
+    summary.setAttribute('aria-label', summary.textContent);
+    const contents = document.createElement('div');
+    contents.className = 'mobile-menu-links';
+    navLinks.querySelectorAll('a').forEach(a => contents.appendChild(a.cloneNode(true)));
+    menu.append(summary, contents);
+    headerNav.appendChild(menu);
+    document.addEventListener?.('keydown', event => {
+      if (event.key === 'Escape') menu.open = false;
+    });
+  }
+  const primaryActions = document.querySelector?.('.hero .actions');
   if (primaryActions) primaryActions.prepend(newBookingLink('btn dark'));
   // Give information and Start pages a direct contact route, not an imitation of a sent form.
-  const articleLead = document.querySelector('.article > .lead');
+  const articleLead = document.querySelector?.('.article > .lead');
   if (articleLead) {
     const actions = document.createElement('div');
     actions.className = 'actions';
     actions.appendChild(newBookingLink('btn dark'));
     articleLead.insertAdjacentElement('afterend', actions);
   }
-  const footerBottom = document.querySelector('footer .footer-bottom');
+  const footerBottom = document.querySelector?.('footer .footer-bottom');
   if (footerBottom) {
     const link = newBookingLink('');
     link.textContent = 'WhatsApp: +996 998 066 098';
@@ -105,4 +140,5 @@
       status.textContent = UI[locale].offline;
     });
   });
+
 })();

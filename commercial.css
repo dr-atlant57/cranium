@@ -69,3 +69,23 @@
 .commercial .cr-detail .cr-steps .cr-card{min-height:205px}
 .commercial .cr-detail .cr-safety{padding:32px 38px}
 @media(max-width:680px){.commercial .cr-detail{padding:42px 0 0}.commercial .cr-detail>h1{font-size:clamp(36px,9vw,50px)}.commercial .cr-detail .cr-steps .cr-card{min-height:unset}.commercial .cr-detail .cr-safety{padding:22px}}
+
+
+/* Keep the actual service, not navigation or oversized typography, in the first mobile viewport. */
+@media(max-width:920px){
+  .commercial .cr-hero{padding-top:45px;padding-bottom:52px;gap:30px;min-height:0}
+  .commercial .cr-hero::before{width:230px;height:230px;top:80px;right:-100px}
+}
+@media(max-width:680px){
+  .commercial .cr-hero{padding:27px 0 45px;gap:28px}
+  .commercial .cr-kicker{font-size:10px;letter-spacing:.08em;line-height:1.5;margin-bottom:8px}
+  .commercial .cr-hero h1{font-size:clamp(33px,9vw,42px);line-height:1.07;max-width:100%;margin:10px 0 14px;letter-spacing:-.035em}
+  .commercial .cr-lead{font-size:16px;line-height:1.48}
+  .commercial .cr-hero .cr-actions{margin-top:18px;gap:9px}
+  .commercial .cr-hero .cr-actions>.cr-button{flex:1 1 auto;min-height:44px;font-size:13px;padding:11px 15px}
+  .commercial .cr-hero .cr-small{font-size:12px;margin-top:13px}
+}
+@media(max-width:370px){
+  .commercial .cr-hero h1{font-size:33px}
+  .commercial .cr-hero .cr-actions>.cr-button{flex:1 1 100%}
+}
