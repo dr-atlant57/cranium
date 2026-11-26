@@ -56,3 +56,21 @@
     });
   });
 })();
+
+/* RFS Corporate Identity Standard 001 */
+(function(){
+ const email='rootfrontier.office@gmail.com', source=location.origin+location.pathname, lang=(document.documentElement.lang||'en').slice(0,2);
+ const labels={"ru":"Записаться по почте","en":"Book by email","de":"Termin per E-Mail","fr":"Réserver par e-mail","es":"Reservar por correo","it":"Prenota via e-mail","pt":"Agendar por e-mail","tr":"E-posta ile randevu","ar":"الحجز عبر البريد الإلكتروني","zh":"通过电子邮件预约","ja":"メールで予約","ko":"이메일 예약"}, membership={"ru":"Часть экосистемы","en":"Part of the ecosystem of","de":"Teil des Ökosystems","fr":"Une partie de l’écosystème","es":"Parte del ecosistema","it":"Parte dell’ecosistema","pt":"Parte do ecossistema","tr":"Ekosistemin bir parçası","ar":"جزء من منظومة","zh":"生态系统的一部分","ja":"エコシステムの一部","ko":"생태계의 일부"};
+ const label=labels[lang]||labels.en, part=membership[lang]||membership.en;
+ const address=(body='')=>'mailto:'+email+'?subject='+encodeURIComponent('CRANIO SYSTEMS — Request')+'&body='+encodeURIComponent((body?body+'\n\n':'')+'Source: '+source);
+ function init(){
+  document.querySelectorAll('a[href*="wa.me/996998066098"]').forEach(a=>{let msg='';try{msg=new URL(a.href).searchParams.get('text')||''}catch(e){}a.href=address(msg);a.removeAttribute('target');if(/whatsapp|واتساب|998[\s-]*066/i.test(a.textContent))a.textContent=label;a.setAttribute('aria-label',label);});
+  const footer=document.querySelector('footer');if(footer&&!footer.querySelector('[data-rfs-corporate]')){const p=document.createElement('p');p.dataset.rfsCorporate='';p.style.cssText='text-align:center;padding:12px 16px;margin:0;font-size:.85rem;overflow-wrap:anywhere';p.append(part+' ');const a=document.createElement('a');a.href='https://rootfrontier.systems';a.textContent='ROOT FRONTIER SYSTEMS';a.style.color='inherit';p.append(a,' · ');const m=document.createElement('a');m.href=address();m.textContent=email;m.style.color='inherit';p.append(m);footer.append(p);}
+  document.querySelectorAll('[data-intake]').forEach(form=>{
+   const input=form.querySelector('textarea');if(!input)return;
+   const button=form.querySelector('button[type="submit"],button:not([type])');if(button)button.textContent=label;
+   form.addEventListener('submit',event=>{event.preventDefault();event.stopImmediatePropagation();if(!input.value.trim()){input.focus();return;}const status=form.querySelector('.status');if(status){status.textContent=lang==='ru'?'Откроется черновик письма. Проверьте его и нажмите «Отправить» в почтовом приложении.':'Your email draft will open. Review it and send it from your email app.';}location.href=address(input.value.trim());},true);
+  });
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
