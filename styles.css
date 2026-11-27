@@ -105,18 +105,18 @@ footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hre
 footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="zh"]::before{content:"🇨🇳"}
 footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ja"]::before{content:"🇯🇵"}
 footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ko"]::before{content:"🇰🇷"}
-html[lang="en"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="en"],
-html[lang="ru"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ru"],
-html[lang="de"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="de"],
-html[lang="fr"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="fr"],
-html[lang="es"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="es"],
-html[lang="it"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="it"],
-html[lang="pt"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="pt"],
-html[lang="tr"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="tr"],
-html[lang="ar"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ar"],
-html[lang="zh"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="zh"],
-html[lang="ja"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ja"],
-html[lang="ko"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ko"]{border-color:var(--lf-active);box-shadow:inset 0 0 0 1px var(--lf-active)}
+html[lang|="en"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="en"],
+html[lang|="ru"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ru"],
+html[lang|="de"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="de"],
+html[lang|="fr"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="fr"],
+html[lang|="es"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="es"],
+html[lang|="it"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="it"],
+html[lang|="pt"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="pt"],
+html[lang|="tr"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="tr"],
+html[lang|="ar"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ar"],
+html[lang|="zh"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="zh"],
+html[lang|="ja"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ja"],
+html[lang|="ko"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang="ko"]{border-color:var(--lf-active);box-shadow:inset 0 0 0 1px var(--lf-active)}
 footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang]:hover{border-color:var(--lf-active);text-decoration:none}
 footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang]:focus-visible{outline:2px solid var(--lf-active);outline-offset:3px}
 html[data-theme="dark"] footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer){--lf-active:#65d8a1}

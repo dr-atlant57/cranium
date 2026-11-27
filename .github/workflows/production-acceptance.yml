@@ -4,6 +4,11 @@ on:
     branches: [main]
     paths: ['tests/production_acceptance.py']
   workflow_dispatch:
+    inputs:
+      contact_probe:
+        description: 'Explicitly submit two synthetic contact tests'
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -17,7 +22,11 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
-      - run: python tests/production_acceptance.py
+      - name: Public website acceptance
+        env:
+          CONTACT_PROBE: ${{ inputs.contact_probe || false }}
+        run: |
+          if [ "$CONTACT_PROBE" = 'true' ]; then python tests/production_acceptance.py --contact; else python tests/production_acceptance.py; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

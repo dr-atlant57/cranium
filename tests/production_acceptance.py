@@ -1,7 +1,7 @@
 """Verify the deployed reconstruction, then submit two synthetic corporate contact probes.
 No personal client data, no CAPTCHA bypass; acceptance requires inbox verification separately.
 """
-import json,os,time
+import json,os,time,sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 BASE='https://cranio.systems'
@@ -32,10 +32,12 @@ with sync_playwright() as p:
                     item['lang']=page.locator('html').get_attribute('lang')
                     item['overflow']=page.evaluate('document.documentElement.scrollWidth>innerWidth+2')
                     item['footer_languages']=page.locator('footer a[hreflang]').count()
-                    item['ok']=item['status']==200 and item['lang']==lang and not item['overflow'] and item['footer_languages']==12
+                    item['ok']=item['status']==200 and item['lang'].lower().split('-')[0]==lang and not item['overflow'] and item['footer_languages']==12
                 except Exception as e:item['ok']=False;item['error']=str(e)[:500]
                 report['public_pages'].append(item)
-        for route,selector,native in [('/ru/start/','[data-contact-product]',False),('/ru/recognition/','#consult-form',True)]:
+        # Contact probes are explicit opt-in; do not repeatedly submit to a provider that rejected QA traffic.
+        probes=[('/ru/start/','[data-contact-product]',False),('/ru/recognition/','#consult-form',True)] if '--contact' in sys.argv else []
+        for route,selector,native in probes:
             q=ctx.new_page()
             result={'route':route}
             try:
@@ -63,6 +65,7 @@ with sync_playwright() as p:
             finally:q.close()
             report['contact_probes'].append(result)
     browser.close()
+report['contact_probe_requested']='--contact' in sys.argv
 print(json.dumps(report,ensure_ascii=False,indent=2))
 Path('production-acceptance.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 raise SystemExit(not report.get('deployed') or len(report['public_pages'])!=60 or not all(x['ok'] for x in report['public_pages']))
