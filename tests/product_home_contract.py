@@ -40,4 +40,4 @@ for key,path in PAGES.items():
     for id_ in re.findall(r'<section[^>]+id="([^"]+)"',original):
         assert id_ in all_ids.ids,(key,id_)
     assert 'rootfrontier.office@gmail.com' in page,key
-print('Product home contract: template parity, 3 pages, 8 roles, 10 products, links, preserved sections.')
+print('Product home contract: template parity, 13 pages, 8 roles, 10 products, links, preserved sections.')

@@ -8,9 +8,9 @@ NAMES=['Personal Navigator','Configuration','Potential','Professional','Cases','
 PAGES={'root':'index.html','en':'en/index.html','ru':'ru/index.html',**{l:f'{l}/index.html' for l in ('de','fr','es','it','pt','tr','ar','zh','ja','ko')}}
 
 def esc(value):
-    return escape(value,quote=True)
+    return escape(value,quote=True).replace('&#x27;', '&#39;')
 
-def render(key):
+def render_from_template(key):
     if key not in ('root','ru','en'):
         return (ROOT/'content'/f'home_{key}.fragment').read_text()
     lang='ru' if key=='ru' else 'en'
@@ -33,6 +33,9 @@ def render(key):
     main,count=re.subn(r'(<main\b[^>]*><div class="wrap">)',lambda m:m[1]+'\n'+entry+'\n',legacy,count=1)
     assert count==1 and main.count('data-product-home="2"')==1 and len(re.findall(r'<h1\b',main))==1,key
     return main
+
+def render(key):
+    return (ROOT/'content'/f'home_{key}.fragment').read_text()
 
 def build():
     for key,path in PAGES.items():

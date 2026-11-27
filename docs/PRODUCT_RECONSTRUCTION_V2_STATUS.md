@@ -50,3 +50,6 @@ Ten additional localized home pages and 30 localized core product pages (Navigat
 
 ## International footer design
 Shared language matrix applied to existing footer language links without removing link targets or requiring JavaScript. Twelve native language names, visual flags/globe, green outlined checkmarks, active-language outline, responsive 6/4/3-column grid and focus support. Standalone recognition, specializations and Vita Wellness pages receive equivalent static links and dedicated stylesheet. Checkmarks denote availability of language entry points, not completeness of all localized content. Browser and visual acceptance pending.
+
+## Phase 7 — release gate setup
+Merged main changes through 92f73d8e15e65f3d1a64ca68bf24d98c1d613280, preserving new Vita Wellness 1.6 and Electric Human appendix; updated obsolete #electric links. Default build now uses only non-destructive scoped generators. Added all-HTML audit and real Chromium release workflow, including four viewport sizes, local interaction and cross-product file exchange. Reports distinguish strict reconstructed errors from legacy warnings; both block release. Old generator and original test retained for historical comparison. No green test or deployment claimed until actual run results are available.
