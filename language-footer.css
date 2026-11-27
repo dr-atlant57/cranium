@@ -35,3 +35,7 @@ html[data-theme="dark"] footer :is(.footer-grid>section:has(>a[hreflang]),.crani
 @media(max-width:850px){footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer){grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:600px){footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer){grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang]{font-size:12px;min-height:88px}}
 @media(prefers-reduced-motion:reduce){footer :is(.footer-grid>section:has(>a[hreflang]),.cranio-language-footer)>a[hreflang]{transition:none}}
+
+/* Rebalance the original two information columns above the full-width language matrix. */
+footer .footer-grid:has(>section:has(>a[hreflang])){grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){footer .footer-grid:has(>section:has(>a[hreflang])){grid-template-columns:1fr}}
