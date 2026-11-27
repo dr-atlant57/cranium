@@ -1,0 +1,56 @@
+name: CRANIO release quality gate
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [product-reconstruction-v2]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproducible product build
+        run: |
+          python scripts/build_site.py --all-products
+          git diff --exit-code
+      - name: Product home and runtime contracts
+        run: |
+          python tests/product_home_contract.py
+          node tests/product_runtime_contract.cjs
+          node tests/preferences.test.cjs
+      - name: All HTML and local references
+        if: always()
+        run: python tests/release_audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: static-audit
+          path: release-audit.json
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/visual_product_release.py
+      - run: python tests/browser_release.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-audit
+          path: |
+            browser-audit.json
+            visual-qa/

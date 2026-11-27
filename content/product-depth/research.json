@@ -1,0 +1,180 @@
+{
+  "ru": {
+    "title": [
+      "Исследовательская архитектура CRANIO.",
+      "C0–C1–C2: три уровня одной области.",
+      "Как система учится."
+    ],
+    "lead": [
+      "Primordocciput — авторская концепция первичного краниального ориентира. Исследовательский контур связывает её с конфигурацией, наблюдением и измерительными задачами.",
+      "Исследуйте костные ориентиры краниовертебрального перехода и вопросы их взаимного положения.",
+      "Инженерный журнал связывает открытые вопросы, исследовательские модели, прототипы и последующие проверки."
+    ],
+    "status": [
+      "Авторская концепция",
+      "Анатомическая схема · иллюстрация",
+      "Исследовательский журнал"
+    ],
+    "layers": [
+      "Наблюдаемое",
+      "Измеренное",
+      "Сообщённое",
+      "Исследовательская концепция"
+    ],
+    "layerText": [
+      "Описать видимое в конкретном контексте.",
+      "Записать единицы, метод, условия и неопределённость.",
+      "Сохранить источник субъективного сообщения.",
+      "Сформулировать модель, вопрос и способ проверки."
+    ],
+    "projects": [
+      [
+        "C0–C1–C2",
+        "Анатомические ориентиры и исследование конфигурации.",
+        "../c0-c1/"
+      ],
+      [
+        "Primordocciput",
+        "Авторская концепция первичного краниального ориентира.",
+        "../primordocciput/"
+      ],
+      [
+        "THE ELECTRIC HUMAN",
+        "Исследовательские вопросы биоэлектрических свойств; проектный контур.",
+        "../../technology/vita-wellness/electric-human/"
+      ],
+      [
+        "Spine Bilateral Mapping",
+        "Интерактивная технологическая демонстрация и вопросы интеграции.",
+        "../../technology/vita-wellness/"
+      ],
+      [
+        "Logbook",
+        "Открытые вопросы, наблюдения и следующий шаг.",
+        "../logbook/"
+      ]
+    ],
+    "projectHeading": "Карта исследовательских направлений",
+    "layersHeading": "Четыре типа исследовательской информации",
+    "legacy": "Существующие материалы",
+    "contact": "Обсудить исследовательское сотрудничество",
+    "explore": "Исследовать конфигурацию",
+    "anatomy": [
+      "Затылочная кость — C0 (обозначение в модели CRANIO).",
+      "Атлант — первый шейный позвонок.",
+      "Осевой позвонок — второй шейный позвонок."
+    ],
+    "anote": "Схематические уровни, не изображение индивидуальной анатомии. Внешняя асимметрия сама по себе не определяет взаимное положение костей.",
+    "logEntries": [
+      [
+        "Vita Wellness",
+        "Технологическая демонстрация",
+        "Раздельное представление L/R и динамики.",
+        "../../technology/vita-wellness/"
+      ],
+      [
+        "Primordocciput",
+        "Исследовательская концепция",
+        "Определение ориентира и способа проверки.",
+        "../primordocciput/"
+      ],
+      [
+        "Configuration",
+        "Интерактивная иллюстрация",
+        "Независимые компоненты ориентации головы.",
+        "../configuration/"
+      ]
+    ],
+    "logHeading": "Рабочий реестр направлений",
+    "logNote": "Это реестр существующих материалов, а не результаты новых экспериментов."
+  },
+  "en": {
+    "title": [
+      "CRANIO research architecture.",
+      "C0–C1–C2: three levels of one region.",
+      "How the system learns."
+    ],
+    "lead": [
+      "Primordocciput is the author's primary cranial reference concept. The research layer connects it to configuration, observation and measurement questions.",
+      "Explore skeletal landmarks of the craniovertebral region and questions about their relative orientation.",
+      "The engineering logbook connects open questions, models, prototypes and subsequent verification."
+    ],
+    "status": [
+      "Author's concept",
+      "Anatomical diagram · illustration",
+      "Research logbook"
+    ],
+    "layers": [
+      "Observed",
+      "Measured",
+      "Reported",
+      "Research concept"
+    ],
+    "layerText": [
+      "Describe what is visible in a particular context.",
+      "Record units, method, conditions and uncertainty.",
+      "Preserve the source of the subjective report.",
+      "State the model, question and possible test."
+    ],
+    "projects": [
+      [
+        "C0–C1–C2",
+        "Anatomical landmarks and configuration research.",
+        "../c0-c1/"
+      ],
+      [
+        "Primordocciput",
+        "The author's primary cranial reference concept.",
+        "../primordocciput/"
+      ],
+      [
+        "THE ELECTRIC HUMAN",
+        "Research questions about bioelectrical properties; concept layer.",
+        "../../technology/vita-wellness/electric-human/"
+      ],
+      [
+        "Spine Bilateral Mapping",
+        "Interactive technology demonstration and integration questions.",
+        "../../technology/vita-wellness/"
+      ],
+      [
+        "Logbook",
+        "Open questions, observations and the next step.",
+        "../logbook/"
+      ]
+    ],
+    "projectHeading": "Research map",
+    "layersHeading": "Four kinds of research information",
+    "legacy": "Existing materials",
+    "contact": "Discuss research collaboration",
+    "explore": "Explore configuration",
+    "anatomy": [
+      "Occipital bone — C0 (notation in the CRANIO model).",
+      "Atlas — first cervical vertebra.",
+      "Axis — second cervical vertebra."
+    ],
+    "anote": "Schematic levels, not an image of individual anatomy. External asymmetry alone does not determine relative bone position.",
+    "logEntries": [
+      [
+        "Vita Wellness",
+        "Technology demonstration",
+        "Separate L/R representation and longitudinal change.",
+        "../../technology/vita-wellness/"
+      ],
+      [
+        "Primordocciput",
+        "Research concept",
+        "Definition of a reference and a way to test it.",
+        "../primordocciput/"
+      ],
+      [
+        "Configuration",
+        "Interactive illustration",
+        "Independent components of head orientation.",
+        "../configuration/"
+      ]
+    ],
+    "logHeading": "Working register",
+    "logNote": "A register of existing materials, not results from new experiments."
+  }
+}

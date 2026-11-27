@@ -16,7 +16,7 @@
     const preferences = navigator.languages?.length ? navigator.languages : [navigator.language || 'en'];
     return preferences.map(tag => tag.toLowerCase().split(/[-_]/)[0]).find(lang => languages.includes(lang)) || 'en';
   };
-  const destination = lang => base + '/' + lang + (routes[lang].includes(rest) ? rest : '/') + location.search + location.hash;
+  const destination = lang => {const same=routes[lang].includes(rest);return base + '/' + lang + (same ? rest : '/') + location.search + (same ? location.hash : '');};
   // An explicit language URL wins; only unlocalized entry routes are detected.
   if (!match) {
     location.replace(destination(resolveLanguage()));
@@ -46,6 +46,14 @@
       location.assign(destination(select.value === 'auto' ? resolveLanguage() : select.value));
     });
   });
+  // Footer switches preserve the equivalent route and record the visitor's language choice.
+  document.querySelectorAll('footer a[hreflang]').forEach(a => {
+    const lang=a.getAttribute('hreflang');
+    if(!languages.includes(lang))return;
+    a.href=destination(lang);
+    if(lang===locale)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+    a.addEventListener('click',()=>write('locale',lang));
+  });
   document.querySelectorAll('[data-intake]').forEach(form => {
     const input = form.querySelector('textarea');
     const status = form.querySelector('.status');
@@ -55,23 +63,23 @@
       status.textContent = UI[locale].offline;
     });
   });
-  // CRANIO_BOOKING_WHATSAPP: human-confirmed booking channel, no form data is sent automatically.
+  // CRANIO_BOOKING_EMAIL: human-confirmed booking channel, no form data is sent automatically.
   const bookingCopy = {
-    ru: ['Запись в WhatsApp', 'Здравствуйте! Хочу записаться на сеанс CRANIO по работе с головой и шеей. Подскажите место, стоимость и доступное время.'],
-    en: ['Book via WhatsApp', 'Hello! I would like to book a CRANIO head and neck session. Please tell me the location, price and available times.'],
-    de: ['Termin per WhatsApp', 'Hallo! Ich möchte einen CRANIO-Termin für Kopf und Nacken vereinbaren. Bitte teilen Sie mir Ort, Preis und verfügbare Zeiten mit.'],
-    fr: ['Réserver via WhatsApp', 'Bonjour ! Je souhaite réserver une séance CRANIO pour la tête et le cou. Quels sont le lieu, le tarif et les horaires disponibles ?'],
-    es: ['Reservar por WhatsApp', 'Hola. Quiero reservar una sesión CRANIO para cabeza y cuello. ¿Cuáles son el lugar, el precio y los horarios disponibles?'],
-    it: ['Prenota via WhatsApp', 'Buongiorno! Vorrei prenotare una sessione CRANIO per testa e collo. Quali sono la sede, il prezzo e gli orari disponibili?'],
-    pt: ['Agendar pelo WhatsApp', 'Olá! Gostaria de agendar uma sessão CRANIO para cabeça e pescoço. Qual é o local, preço e horário disponível?'],
-    tr: ['WhatsApp ile randevu', 'Merhaba! Baş ve boyun için CRANIO seansı ayırtmak istiyorum. Yer, ücret ve uygun saatleri paylaşır mısınız?'],
-    ar: ['الحجز عبر واتساب', 'مرحباً، أود حجز جلسة CRANIO للرأس والرقبة. يرجى إخباري بالموقع والسعر والمواعيد المتاحة.'],
-    zh: ['通过 WhatsApp 预约', '您好！我想预约 CRANIO 头颈护理服务。请告知地点、价格和可预约时间。'],
-    ja: ['WhatsAppで予約', 'こんにちは。CRANIOの頭と首のセッションを予約したいです。場所、料金、予約可能な時間を教えてください。'],
-    ko: ['WhatsApp 예약', '안녕하세요. CRANIO 머리와 목 세션을 예약하고 싶습니다. 장소, 가격, 가능한 시간을 알려주세요.']
+    ru: ['Записаться по почте', 'Здравствуйте! Хочу записаться на сеанс CRANIO по работе с головой и шеей. Подскажите место, стоимость и доступное время.'],
+    en: ['Book by email', 'Hello! I would like to book a CRANIO head and neck session. Please tell me the location, price and available times.'],
+    de: ['Termin per E-Mail', 'Hallo! Ich möchte einen CRANIO-Termin für Kopf und Nacken vereinbaren. Bitte teilen Sie mir Ort, Preis und verfügbare Zeiten mit.'],
+    fr: ['Réserver par e-mail', 'Bonjour ! Je souhaite réserver une séance CRANIO pour la tête et le cou. Quels sont le lieu, le tarif et les horaires disponibles ?'],
+    es: ['Reservar por correo', 'Hola. Quiero reservar una sesión CRANIO para cabeza y cuello. ¿Cuáles son el lugar, el precio y los horarios disponibles?'],
+    it: ['Prenota via e-mail', 'Buongiorno! Vorrei prenotare una sessione CRANIO per testa e collo. Quali sono la sede, il prezzo e gli orari disponibili?'],
+    pt: ['Agendar por e-mail', 'Olá! Gostaria de agendar uma sessão CRANIO para cabeça e pescoço. Qual é o local, preço e horário disponível?'],
+    tr: ['E-posta ile randevu', 'Merhaba! Baş ve boyun için CRANIO seansı ayırtmak istiyorum. Yer, ücret ve uygun saatleri paylaşır mısınız?'],
+    ar: ['الحجز عبر البريد الإلكتروني', 'مرحباً، أود حجز جلسة CRANIO للرأس والرقبة. يرجى إخباري بالموقع والسعر والمواعيد المتاحة.'],
+    zh: ['通过电子邮件预约', '您好！我想预约 CRANIO 头颈护理服务。请告知地点、价格和可预约时间。'],
+    ja: ['メールで予約', 'こんにちは。CRANIOの頭と首のセッションを予約したいです。場所、料金、予約可能な時間を教えてください。'],
+    ko: ['이메일 예약', '안녕하세요. CRANIO 머리와 목 세션을 예약하고 싶습니다. 장소, 가격, 가능한 시간을 알려주세요.']
   };
   const bookingText = bookingCopy[locale] || bookingCopy.en;
-  const bookingHref = 'https://wa.me/996998066098?text=' + encodeURIComponent(bookingText[1]);
+  const bookingHref = 'mailto:rootfrontier.office@gmail.com';
   const newBookingLink = (classes) => {
     const link = document.createElement('a');
     link.href = bookingHref;
@@ -85,7 +93,8 @@
   const navLinks = document.querySelector?.('header .navlinks');
   if (navLinks && !navLinks.querySelector('[data-booking]')) {
     const link = newBookingLink('');
-    link.dataset.booking = 'whatsapp';
+    link.dataset.booking = 'email';
+    link.href=base+'/'+locale+'/start/';link.removeAttribute('target');
     navLinks.prepend(link);
   }
   // Accessible native dropdown on small screens. Desktop links remain in the DOM for fallback.
@@ -95,8 +104,9 @@
     headerBook.href = bookingHref;
     headerBook.target = '_blank';
     headerBook.rel = 'noopener noreferrer';
-    headerBook.dataset.booking = 'whatsapp';
+    headerBook.dataset.booking = 'email';
     headerBook.textContent = shortLabels[locale] || bookingText[0];
+    headerBook.href=base+'/'+locale+'/start/';headerBook.removeAttribute('target');
   }
   const headerNav = document.querySelector?.('header nav');
   if (headerNav && navLinks && !headerNav.querySelector('.mobile-menu')) {
@@ -125,12 +135,6 @@
     actions.appendChild(newBookingLink('btn dark'));
     articleLead.insertAdjacentElement('afterend', actions);
   }
-  const footerBottom = document.querySelector?.('footer .footer-bottom');
-  if (footerBottom) {
-    const link = newBookingLink('');
-    link.textContent = 'WhatsApp: +996 998 066 098';
-    footerBottom.appendChild(link);
-  }
   document.querySelectorAll('[data-intake]').forEach(form => {
     const input = form.querySelector('textarea');
     const status = form.querySelector('.status');
@@ -141,4 +145,18 @@
     });
   });
 
+})();
+
+/* RFS Corporate Identity Standard 001 */
+(function(){
+ const email='rootfrontier.office@gmail.com', source=location.origin+location.pathname, lang=(document.documentElement.lang||'en').slice(0,2);
+ const labels={"ru":"Записаться по почте","en":"Book by email","de":"Termin per E-Mail","fr":"Réserver par e-mail","es":"Reservar por correo","it":"Prenota via e-mail","pt":"Agendar por e-mail","tr":"E-posta ile randevu","ar":"الحجز عبر البريد الإلكتروني","zh":"通过电子邮件预约","ja":"メールで予約","ko":"이메일 예약"}, membership={"ru":"Часть экосистемы","en":"Part of the ecosystem of","de":"Teil des Ökosystems","fr":"Une partie de l’écosystème","es":"Parte del ecosistema","it":"Parte dell’ecosistema","pt":"Parte do ecossistema","tr":"Ekosistemin bir parçası","ar":"جزء من منظومة","zh":"生态系统的一部分","ja":"エコシステムの一部","ko":"생태계의 일부"};
+ const label=labels[lang]||labels.en, part=membership[lang]||membership.en;
+ const address=()=>'mailto:'+email;
+ function init(){
+  document.querySelectorAll('a[href*="wa.me/996998066098"]').forEach(a=>{let msg='';try{msg=new URL(a.href).searchParams.get('text')||''}catch(e){}a.href=address(msg);a.removeAttribute('target');if(/whatsapp|واتساب|998[\s-]*066/i.test(a.textContent))a.textContent=label;a.setAttribute('aria-label',label);});
+  const footer=document.querySelector('footer');if(footer&&!footer.querySelector('[data-rfs-corporate]')&&!(footer.querySelector('a[href^="mailto:rootfrontier.office@gmail.com"]')&&footer.querySelector('a[href*="rootfrontier.systems"]'))){const p=document.createElement('p');p.dataset.rfsCorporate='';p.style.cssText='text-align:center;padding:12px 16px;margin:0;font-size:.85rem;overflow-wrap:anywhere';p.append(part+' ');const a=document.createElement('a');a.href='https://rootfrontier.systems';a.textContent='ROOT FRONTIER SYSTEMS';a.style.color='inherit';p.append(a,' · ');const m=document.createElement('a');m.href=address();m.textContent=email;m.style.color='inherit';p.append(m);footer.append(p);}
+
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
