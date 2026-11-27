@@ -1,0 +1,160 @@
+{
+  "ru": {
+    "titles": [
+      "Что вы замечаете в себе?",
+      "Положение головы на позвоночнике.",
+      "Ноль — не цель."
+    ],
+    "leads": [
+      "Соберите личную карту наблюдений без регистрации и рейтинга.",
+      "Исследуйте три независимых компонента ориентации головы на условных схемах.",
+      "Различайте текущее, желаемое и потенциальное состояние."
+    ],
+    "groups": [
+      "Физическое",
+      "Когнитивное",
+      "Эмоциональное",
+      "Профессиональное"
+    ],
+    "items": [
+      [
+        "Свобода движений головы",
+        "Ощущение усилия в шее",
+        "Комфорт в конце дня"
+      ],
+      [
+        "Устойчивость внимания",
+        "Умственная усталость",
+        "Ощущение ясности"
+      ],
+      [
+        "Ощущение напряжения",
+        "Способность расслабляться",
+        "Восприятие своего состояния"
+      ],
+      [
+        "Комфорт при работе",
+        "Рабочая нагрузка",
+        "Восстановление после работы"
+      ]
+    ],
+    "axes": [
+      "Боковой наклон",
+      "Поворот",
+      "Наклон вперёд / назад"
+    ],
+    "views": [
+      "Фронтальный вид",
+      "Вид сверху",
+      "Боковой вид"
+    ],
+    "axisNotes": [
+      "Ориентация во фронтальной плоскости.",
+      "Ориентация в горизонтальной плоскости.",
+      "Ориентация в сагиттальной плоскости."
+    ],
+    "potentialItems": [
+      "Свобода движения и комфорт",
+      "Ясность и устойчивость внимания",
+      "Ощущение спокойствия и лёгкости",
+      "Комфорт и ресурс в рабочем дне"
+    ],
+    "current": "Текущее",
+    "desired": "Желаемое",
+    "potential": "Потенциальное",
+    "unknown": "Не определено",
+    "none": "Не оценено",
+    "scale": "Личная оценка удовлетворённости: 0 — совсем не удовлетворяет, 10 — полностью удовлетворяет. Это не клиническая шкала. Поля можно оставить пустыми.",
+    "note": "Потенциал не вычисляется из разницы между текущим и желаемым. Он уточняется в процессе индивидуальной работы.",
+    "configNote": "Углы демонстрационные. Схема не измеряет положение вашей головы, не моделирует ткани и не определяет индивидуальную норму.",
+    "navNote": "Отметьте интересующие направления. Отметка означает только желание обратить на это внимание.",
+    "selected": "Выбрано",
+    "save": "Сохранить на устройстве",
+    "reset": "Очистить",
+    "local": "Отметки не сохраняются после перезагрузки и не передаются автоматически. Экспорт создаёт локальный JSON-файл.",
+    "full": "Расширенная карта из 137 пунктов (RU)",
+    "next": "Продолжить",
+    "contact": "Обсудить индивидуальный запрос",
+    "legacy": "Прежние материалы",
+    "more": "Что означает этот параметр?"
+  },
+  "en": {
+    "titles": [
+      "What do you notice about yourself?",
+      "Head position in relation to the spine.",
+      "Zero is not the goal."
+    ],
+    "leads": [
+      "Create a personal observation map without registration or scoring.",
+      "Explore three independent components of head orientation using illustrative diagrams.",
+      "Distinguish current, desired and potential states."
+    ],
+    "groups": [
+      "Physical",
+      "Cognitive",
+      "Emotional",
+      "Professional"
+    ],
+    "items": [
+      [
+        "Freedom of head movement",
+        "Perceived neck effort",
+        "End-of-day comfort"
+      ],
+      [
+        "Sustained attention",
+        "Mental fatigue",
+        "Perceived clarity"
+      ],
+      [
+        "Feeling of tension",
+        "Ability to relax",
+        "Perception of your state"
+      ],
+      [
+        "Comfort at work",
+        "Workload",
+        "Recovery after work"
+      ]
+    ],
+    "axes": [
+      "Lateral tilt",
+      "Rotation",
+      "Forward / backward tilt"
+    ],
+    "views": [
+      "Front view",
+      "Top view",
+      "Side view"
+    ],
+    "axisNotes": [
+      "Orientation in the frontal plane.",
+      "Orientation in the horizontal plane.",
+      "Orientation in the sagittal plane."
+    ],
+    "potentialItems": [
+      "Freedom of movement and comfort",
+      "Clarity and sustained attention",
+      "Perceived calm and ease",
+      "Comfort and resources during work"
+    ],
+    "current": "Current",
+    "desired": "Desired",
+    "potential": "Potential",
+    "unknown": "Not determined",
+    "none": "Not rated",
+    "scale": "Personal satisfaction rating: 0 means not satisfied at all, 10 means fully satisfied. Not a clinical scale. Fields may be left blank.",
+    "note": "Potential is not calculated from the difference between current and desired states. It is explored through individual work.",
+    "configNote": "Angles are illustrative. The diagram does not measure your head position, simulate tissues or establish an individual norm.",
+    "navNote": "Select directions you wish to observe. A selection only means you want to pay attention to it.",
+    "selected": "Selected",
+    "save": "Save on your device",
+    "reset": "Clear",
+    "local": "Selections are not retained after reloading and are not submitted automatically. Export creates a local JSON file.",
+    "full": "Extended 137-item checklist (Russian)",
+    "next": "Continue",
+    "contact": "Discuss your individual enquiry",
+    "legacy": "Existing materials",
+    "more": "What does this parameter mean?"
+  }
+}
