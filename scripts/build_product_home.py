@@ -18,7 +18,7 @@ def render(key):
     local='en/' if key=='root' else ''
     def url(route):
         return prefix+route if route.startswith('ru/') or route=='technology/vita-wellness/' else local+route
-    links=[prefix+'ru/recognition/','#px-title','#px-potential',prefix+'ru/professions/',local+'cases/',local+'education/',prefix+'technology/vita-wellness/',prefix+'ru/professions/for-companies/',local+'primordocciput/',local+'twinmind/']
+    links=[local+'your-cranium/',local+'configuration/',local+'potential/',prefix+'ru/professions/',local+'cases/',local+'education/',prefix+'technology/vita-wellness/',prefix+'ru/professions/for-companies/',local+'primordocciput/',local+'twinmind/']
     role_html=''.join(f'<details><summary>{esc(title)}{" · RU" if lang=="en" and route.startswith("ru/") else ""}</summary><p>{esc(desc)}</p><a href="{url(route)}">{esc(d["open"])} ↗</a></details>' for title,desc,route in d['roles'])
     axis_html=''.join(f'<details><summary>{esc(title)}</summary><p>{esc(desc)}</p></details>' for title,desc in d['axes'])
     product_html=''.join(f'<article><span class="px-state">{esc(d["status"][i])}</span><h3>{name}</h3><p>{esc(d["descriptions"][i])}</p><a href="{links[i]}">{esc(d["open"])} ↗</a></article>' for i,name in enumerate(NAMES))

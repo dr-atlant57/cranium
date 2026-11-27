@@ -1,6 +1,9 @@
 """Keep static pages, localized navigation and versioned preferences consistent."""
 from pathlib import Path
 import sys,runpy
+if "--product-core" in sys.argv:
+ runpy.run_path(str(Path(__file__).with_name("build_product_core.py")),run_name="__main__")
+ raise SystemExit(0)
 if "--product-home" in sys.argv:
  runpy.run_path(str(Path(__file__).with_name("build_product_home.py")),run_name="__main__")
  raise SystemExit(0)

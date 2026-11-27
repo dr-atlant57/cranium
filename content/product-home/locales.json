@@ -22,9 +22,9 @@
     "prior": "Practical information and existing observations",
     "menu": "Menu",
     "status": [
-      "Existing RU entry",
-      "Illustration",
-      "Concept",
+      "Interactive product",
+      "Interactive model",
+      "Personal reference points",
       "RU routes",
       "Section",
       "Information",
@@ -37,7 +37,7 @@
       [
         "For myself",
         "Recognize familiar experiences and learn how a first visit works.",
-        "experience/"
+        "your-cranium/"
       ],
       [
         "Business owner",
@@ -129,9 +129,9 @@
     "prior": "Практическая информация и существующие наблюдения",
     "menu": "Меню",
     "status": [
-      "Существующий вход RU",
-      "Иллюстрация",
-      "Концепция",
+      "Интерактивный продукт",
+      "Интерактивная модель",
+      "Личные ориентиры",
       "Маршруты RU",
       "Раздел",
       "Информация",
@@ -144,7 +144,7 @@
       [
         "Для себя",
         "Узнайте знакомые ощущения и изучите формат первого визита.",
-        "recognition/"
+        "your-cranium/"
       ],
       [
         "Собственник бизнеса",
