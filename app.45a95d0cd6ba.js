@@ -71,7 +71,7 @@
     ko: ['이메일 예약', '안녕하세요. CRANIO 머리와 목 세션을 예약하고 싶습니다. 장소, 가격, 가능한 시간을 알려주세요.']
   };
   const bookingText = bookingCopy[locale] || bookingCopy.en;
-  const bookingHref = 'mailto:rootfrontier.office@gmail.com?subject='+encodeURIComponent('CRANIO SYSTEMS — Request')+'&body='+encodeURIComponent(bookingText[1]+'\n\nSource: '+location.origin+location.pathname);
+  const bookingHref = 'mailto:rootfrontier.office@gmail.com';
   const newBookingLink = (classes) => {
     const link = document.createElement('a');
     link.href = bookingHref;
@@ -86,6 +86,7 @@
   if (navLinks && !navLinks.querySelector('[data-booking]')) {
     const link = newBookingLink('');
     link.dataset.booking = 'email';
+    if (locale==='ru'||locale==='en') {link.href=base+'/'+locale+'/start/';link.textContent=locale==='ru'?'Контакты':'Contact';link.removeAttribute('target');link.setAttribute('aria-label',link.textContent);}
     navLinks.prepend(link);
   }
   // Accessible native dropdown on small screens. Desktop links remain in the DOM for fallback.
@@ -97,6 +98,7 @@
     headerBook.rel = 'noopener noreferrer';
     headerBook.dataset.booking = 'email';
     headerBook.textContent = shortLabels[locale] || bookingText[0];
+    if (locale==='ru'||locale==='en') {headerBook.href=base+'/'+locale+'/start/';headerBook.removeAttribute('target');headerBook.textContent=locale==='ru'?'Контакты':'Contact';}
   }
   const headerNav = document.querySelector?.('header nav');
   if (headerNav && navLinks && !headerNav.querySelector('.mobile-menu')) {
@@ -126,7 +128,7 @@
     articleLead.insertAdjacentElement('afterend', actions);
   }
   const footerBottom = document.querySelector?.('footer .footer-bottom');
-  if (footerBottom) {
+  if (footerBottom && !document.querySelector('footer [data-rfs-corporate]')) {
     const link = newBookingLink('');
     link.textContent = 'rootfrontier.office@gmail.com';
     footerBottom.appendChild(link);
@@ -148,7 +150,7 @@
  const email='rootfrontier.office@gmail.com', source=location.origin+location.pathname, lang=(document.documentElement.lang||'en').slice(0,2);
  const labels={"ru":"Записаться по почте","en":"Book by email","de":"Termin per E-Mail","fr":"Réserver par e-mail","es":"Reservar por correo","it":"Prenota via e-mail","pt":"Agendar por e-mail","tr":"E-posta ile randevu","ar":"الحجز عبر البريد الإلكتروني","zh":"通过电子邮件预约","ja":"メールで予約","ko":"이메일 예약"}, membership={"ru":"Часть экосистемы","en":"Part of the ecosystem of","de":"Teil des Ökosystems","fr":"Une partie de l’écosystème","es":"Parte del ecosistema","it":"Parte dell’ecosistema","pt":"Parte do ecossistema","tr":"Ekosistemin bir parçası","ar":"جزء من منظومة","zh":"生态系统的一部分","ja":"エコシステムの一部","ko":"생태계의 일부"};
  const label=labels[lang]||labels.en, part=membership[lang]||membership.en;
- const address=(body='')=>'mailto:'+email+'?subject='+encodeURIComponent('CRANIO SYSTEMS — Request')+'&body='+encodeURIComponent((body?body+'\n\n':'')+'Source: '+source);
+ const address=()=>'mailto:'+email;
  function init(){
   document.querySelectorAll('a[href*="wa.me/996998066098"]').forEach(a=>{let msg='';try{msg=new URL(a.href).searchParams.get('text')||''}catch(e){}a.href=address(msg);a.removeAttribute('target');if(/whatsapp|واتساب|998[\s-]*066/i.test(a.textContent))a.textContent=label;a.setAttribute('aria-label',label);});
   const footer=document.querySelector('footer');if(footer&&!footer.querySelector('[data-rfs-corporate]')){const p=document.createElement('p');p.dataset.rfsCorporate='';p.style.cssText='text-align:center;padding:12px 16px;margin:0;font-size:.85rem;overflow-wrap:anywhere';p.append(part+' ');const a=document.createElement('a');a.href='https://rootfrontier.systems';a.textContent='ROOT FRONTIER SYSTEMS';a.style.color='inherit';p.append(a,' · ');const m=document.createElement('a');m.href=address();m.textContent=email;m.style.color='inherit';p.append(m);footer.append(p);}
