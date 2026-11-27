@@ -2,7 +2,7 @@
 from pathlib import Path
 import re
 ROOT=Path(__file__).resolve().parents[1]
-for lang in ('ru','en'):
+for lang in ('ru','en','de','fr','es','it','pt','tr','ar','zh','ja','ko'):
     for route in ('your-cranium','configuration','potential'):
         p=ROOT/lang/route/'index.html'
         main=(ROOT/'content/product-core'/f'{lang}_{route}.fragment').read_text()
@@ -11,4 +11,4 @@ for lang in ('ru','en'):
         updated,n=re.subn(r'<main\b[^>]*>.*?</main>',lambda _:main,source,count=1,flags=re.S)
         assert n==1,p
         if source!=updated:p.write_text(updated)
-print('Six product core pages refreshed.')
+print('36 product core pages refreshed.')

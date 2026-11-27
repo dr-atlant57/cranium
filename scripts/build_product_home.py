@@ -5,12 +5,14 @@ import json,re
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'content/product-home'
 NAMES=['Personal Navigator','Configuration','Potential','Professional','Cases','Academy','Technology','Corporate','Research','TwinMind']
-PAGES={'root':'index.html','en':'en/index.html','ru':'ru/index.html'}
+PAGES={'root':'index.html','en':'en/index.html','ru':'ru/index.html',**{l:f'{l}/index.html' for l in ('de','fr','es','it','pt','tr','ar','zh','ja','ko')}}
 
 def esc(value):
     return escape(value,quote=True)
 
 def render(key):
+    if key not in ('root','ru','en'):
+        return (ROOT/'content'/f'home_{key}.fragment').read_text()
     lang='ru' if key=='ru' else 'en'
     d=json.loads((SOURCE/'locales.json').read_text())[lang]
     template=(SOURCE/'template.html').read_text()
@@ -42,7 +44,7 @@ def build():
         updated,count=re.subn(r'<main\b[^>]*>.*?</main>',lambda _:main,source,count=1,flags=re.S)
         assert count==1,path
         if updated!=source:p.write_text(updated)
-    print('Product home: root, en, ru. Other pages untouched.')
+    print('Product home: root and 12 languages. Other pages untouched.')
 
 if __name__=='__main__':
     build()
