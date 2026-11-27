@@ -58,6 +58,22 @@ with sync_playwright() as p:
         page.wait_for_function("document.querySelector('form [name=message]').value === ''")
     assert len(captured)==12
     assert all(x['email']=='rootfrontier.office@gmail.com' and x['message']=='Synthetic local test, not sent' for x in captured)
+    context.unroute('https://formsubmit.co/ajax/**',intercept)
+    def reject(route):
+        headers={'access-control-allow-origin':'*','access-control-allow-methods':'POST, OPTIONS','access-control-allow-headers':'content-type, accept'}
+        route.fulfill(status=204 if route.request.method=='OPTIONS' else 503,headers=headers,body='' if route.request.method=='OPTIONS' else 'Unavailable')
+    context.route('https://formsubmit.co/ajax/**',reject)
+    for lang in langs:
+        page.goto(base+'/'+lang+'/start/')
+        f=page.locator('[data-contact-product]')
+        f.locator('[name=name]').fill('QA TEST')
+        f.locator('[name=email]').fill('rootfrontier.office@gmail.com')
+        f.locator('[name=message]').fill('Retain on provider error')
+        f.locator('button[type=submit]').click()
+        page.wait_for_function("document.activeElement.hasAttribute('data-contact-draft')")
+        assert f.locator('[name=message]').input_value()=='Retain on provider error'
+        assert f.locator('[data-contact-draft]').is_visible()
+        assert f.locator('button[type=submit]').is_enabled()
     browser.close()
 server.shutdown()
-print('Visual QA: 12 theme/viewport combinations, language footer route continuity, RTL, menu keyboard, 12 mocked contact form submissions.')
+print('Visual QA: 12 theme/viewport combinations, language footer route continuity, RTL, menu keyboard, 12 mocked success and 12 mocked provider-failure contact paths.')
