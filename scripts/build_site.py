@@ -7,7 +7,7 @@ No routine build invokes it.
 from pathlib import Path
 import runpy,sys
 HERE=Path(__file__).resolve().parent
-MODES={'--product-home':'build_product_home.py','--product-core':'build_product_core.py','--product-academy':'build_product_academy.py','--product-depth':'build_product_depth.py'}
+MODES={'--product-home':'build_product_home.py','--product-core':'build_product_core.py','--product-academy':'build_product_academy.py','--product-depth':'build_product_depth.py','--product-contact':'build_product_contact.py'}
 args=sys.argv[1:]
 if args and args!=['--all-products'] and (len(args)!=1 or args[0] not in MODES):
     raise SystemExit('Use --all-products or one of '+', '.join(MODES))

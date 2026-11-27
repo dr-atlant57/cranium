@@ -15,7 +15,7 @@ def render_from_template(key):
         return (ROOT/'content'/f'home_{key}.fragment').read_text()
     lang='ru' if key=='ru' else 'en'
     d=json.loads((SOURCE/'locales.json').read_text())[lang]
-    template=(SOURCE/'template.html').read_text()
+    template=(SOURCE/'template.fragment').read_text()
     prefix='' if key=='root' else '../'
     local='en/' if key=='root' else ''
     def url(route):

@@ -48,17 +48,22 @@ with sync_playwright() as p:
         with page.expect_download() as d2:page.locator('[data-tm-export]').click()
         assert len(json.loads(Path(d2.value.path()).read_text())['records'])==2
     except Exception as e:errors.append(['core continuity',390,str(e)])
+    page.close()
     for file in sorted(ROOT.rglob('index.html')):
         if any(x in ('.git','node_modules') for x in file.relative_to(ROOT).parts):continue
         route='/'+file.parent.relative_to(ROOT).as_posix().replace('.','',1) if file.parent==ROOT else '/'+file.parent.relative_to(ROOT).as_posix()+'/'
-        runtime.clear()
+        page=context.new_page()
+        runtime=[]
+        page.on('pageerror',lambda e:runtime.append(str(e)))
         try:
-            response=page.goto(base+route,wait_until='domcontentloaded',timeout=15000)
+            response=page.goto(base+route,wait_until='load',timeout=15000)
+            page.wait_for_timeout(120)
             if not response or response.status>=400:errors.append([route,390,'HTTP response'])
             if page.evaluate('document.documentElement.scrollWidth>innerWidth+2'):errors.append([route,390,'horizontal overflow'])
             if runtime:errors.extend([route,390,'JS '+x] for x in runtime)
             checked+=1
         except Exception as e:errors.append([route,390,str(e)])
+        finally:page.close()
     browser.close()
 server.shutdown()
 (ROOT/'browser-audit.json').write_text(json.dumps({'page_visits':checked,'errors':errors},ensure_ascii=False,indent=2))
