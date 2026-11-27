@@ -1,0 +1,100 @@
+{
+  "ru": {
+    "caseTitle": "Изменения, которые можно увидеть и описать.",
+    "caseLead": "Архив авторских наблюдений. Сравниваем исходное состояние, ход работы и последующие сообщения, сохраняя происхождение каждого значения.",
+    "caseType": "Авторское сообщение · первичные документы не опубликованы",
+    "archive": "Архивные истории",
+    "caseNames": [
+      "Шея",
+      "Плечо",
+      "Внешняя симметрия"
+    ],
+    "caseDetails": [
+      "Четыре встречи. Со слов автора, привычный хруст перестал отмечаться; авторская оценка изменилась с −3 до +7.",
+      "Проблема плеча около полутора лет. Со слов автора, примерно 80% субъективного улучшения после одного сеанса.",
+      "Архивное обобщение: наблюдаемые изменения симметрии лица за 1,5–2 месяца после 2–5 сеансов; не отдельная фотокарточка."
+    ],
+    "before": "Исходная оценка",
+    "after": "Последующая оценка",
+    "scale": "Авторская шкала; пределы и первичная анкета в архивной карточке не указаны. Не клиническая шкала.",
+    "missing": "Первичные измерения, фотографии и разрешения участников в открытом архиве не представлены. Числа не являются прогнозом для другого человека.",
+    "record": "Архитектура записи",
+    "steps": [
+      "Исходный запрос",
+      "Контекст и работа",
+      "Наблюдения и измерения",
+      "Динамика и последующая проверка"
+    ],
+    "explore": "Исследовать свой контекст",
+    "contact": "Обсудить индивидуальный запрос",
+    "legacy": "Существующие архивные материалы",
+    "techTitle": "Технология делает скрытые связи видимыми.",
+    "techLead": "Исследуйте интерактивные модели, технологические концепции и направления совместной разработки.",
+    "demo": "Интерактивный проект · концепция интеграции",
+    "vita": "Spine Bilateral Mapping",
+    "vitaDesc": "Билатеральная карта позвоночника: левые и правые показатели, визуализация асимметрии, динамики и инженерной спецификации.",
+    "labels": [
+      "Карта L/R",
+      "Паттерны",
+      "Динамика",
+      "Интеграция",
+      "THE ELECTRIC HUMAN",
+      "Спецификация"
+    ],
+    "techNote": "Демонстрационные данные и предлагаемые новые измерительные слои не означают, что функциональность уже доступна в устройстве Vita Wellness.",
+    "techCTA": "Открыть живую демонстрацию (RU)",
+    "research": "Исследовательский контур",
+    "researchDesc": "Первичный краниальный ориентир, C0–C1 и открытые вопросы.",
+    "collab": "Обсудить технологическое сотрудничество",
+    "techLegacy": "Существующие технологические материалы"
+  },
+  "en": {
+    "caseTitle": "Changes we can describe and compare.",
+    "caseLead": "Explore practitioner-reported archive observations with their context and provenance intact.",
+    "caseType": "Practitioner report · primary records not published",
+    "archive": "Archive narratives",
+    "caseNames": [
+      "Neck",
+      "Shoulder",
+      "Visible symmetry"
+    ],
+    "caseDetails": [
+      "Four visits. According to the practitioner, habitual neck cracking was no longer reported; the author's scale changed from −3 to +7.",
+      "A shoulder issue lasting about eighteen months. The practitioner reported approximately 80% subjective improvement after one session.",
+      "An archive summary describes observed changes in facial symmetry over 1.5–2 months after 2–5 sessions; this is not an individual photographic record."
+    ],
+    "before": "Initial rating",
+    "after": "Subsequent rating",
+    "scale": "Author's scale; range and primary questionnaire are not provided in the archive entry. Not a clinical scale.",
+    "missing": "Primary measurements, photographs and participant permissions are not included in the public archive. The numbers do not predict another individual's outcome.",
+    "record": "Record architecture",
+    "steps": [
+      "Initial request",
+      "Context and work",
+      "Observations and measurements",
+      "Follow-up and verification"
+    ],
+    "explore": "Explore your own context",
+    "contact": "Discuss your individual enquiry",
+    "legacy": "Existing archive materials",
+    "techTitle": "Technology makes hidden relationships visible.",
+    "techLead": "Explore interactive models, technology concepts and directions for collaboration.",
+    "demo": "Interactive project · integration concept",
+    "vita": "Spine Bilateral Mapping",
+    "vitaDesc": "Bilateral spine map: left and right indicators, asymmetry, longitudinal change and engineering specifications.",
+    "labels": [
+      "L/R map",
+      "Patterns",
+      "Dynamics",
+      "Integration",
+      "THE ELECTRIC HUMAN",
+      "Specification"
+    ],
+    "techNote": "Demonstration data and proposed measurement layers do not establish that these functions are already available in Vita Wellness hardware or software.",
+    "techCTA": "Open the live demonstration (Russian)",
+    "research": "Research layer",
+    "researchDesc": "Primary cranial reference, C0–C1 and open questions.",
+    "collab": "Discuss technology collaboration",
+    "techLegacy": "Existing technology materials"
+  }
+}
