@@ -70,6 +70,14 @@ for url,n in Counter(urls).items():
     if q is not None and not q.is_file():report(errors,ROOT/'sitemap.xml','missing route: '+url)
 for l in LANGS:
     if 'https://cranio.systems/'+l+'/potential/' not in urls:report(errors,ROOT/'sitemap.xml','missing Potential '+l)
+# A canonical public index page belongs in the sitemap; intentionally noindexed demos and redirect aliases do not.
+url_set=set(urls)
+for p,(a,s) in pages.items():
+    if p.name!='index.html' or a.noindex:continue
+    relative=p.parent.relative_to(ROOT).as_posix()
+    expected='https://cranio.systems/'+('' if relative=='.' else relative+'/')
+    if expected in a.canonical and expected not in url_set:
+        report(errors,p,'indexable canonical route missing in sitemap')
 report_data={'html_files':len(pages),'strict_core_pages':len(core),'sitemap_urls':len(urls),'errors':errors,'legacy_warnings':warnings}
 (ROOT/'release-audit.json').write_text(json.dumps(report_data,ensure_ascii=False,indent=2))
 print(json.dumps({k:v if not isinstance(v,list) else len(v) for k,v in report_data.items()},ensure_ascii=False))
