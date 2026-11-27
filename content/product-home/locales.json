@@ -1,0 +1,216 @@
+{
+  "en": {
+    "headline": "A freer neck.<br>A clearer head.",
+    "lead": "Explore the relationship between head position, everyday experience and directions for individual development.",
+    "zero": "Zero is not the goal.",
+    "cta": "Explore your possibilities",
+    "book": "Discuss your situation",
+    "model": "Configuration / illustrative model",
+    "legend": "Illustrative head orientation",
+    "left": "Left",
+    "center": "Centre",
+    "right": "Right",
+    "note": "A schematic illustration, not an assessment of your anatomy or a target angle.",
+    "detail": "What does this model show?",
+    "detailtext": "It illustrates one component of head orientation relative to the neck. Individual configuration requires observation and assessment.",
+    "routes": "Start with your own context.",
+    "routelead": "Choose a route. Explore what is relevant to you without an obligatory questionnaire.",
+    "open": "Explore",
+    "potential": "Explore directions of potential.",
+    "potentialnote": "These are directions for observation, not predictions of individual outcomes.",
+    "products": "One system. Ten ways to explore.",
+    "prior": "Practical information and existing observations",
+    "menu": "Menu",
+    "status": [
+      "Existing RU entry",
+      "Illustration",
+      "Concept",
+      "RU routes",
+      "Section",
+      "Information",
+      "Interactive project",
+      "Inquiry",
+      "Research",
+      "Concept"
+    ],
+    "roles": [
+      [
+        "For myself",
+        "Recognize familiar experiences and learn how a first visit works.",
+        "experience/"
+      ],
+      [
+        "Business owner",
+        "Consider individual and organizational context.",
+        "ru/professions/for-companies/"
+      ],
+      [
+        "Professional",
+        "Explore the demands of your working day.",
+        "ru/professions/"
+      ],
+      [
+        "Future specialist",
+        "Discover the learning architecture.",
+        "education/"
+      ],
+      [
+        "Corporate client",
+        "Discuss a program for your team.",
+        "ru/professions/for-companies/"
+      ],
+      [
+        "Researcher",
+        "Explore the research framework and cranial reference.",
+        "primordocciput/"
+      ],
+      [
+        "Technology partner",
+        "Explore the Vita Wellness demonstration.",
+        "technology/vita-wellness/"
+      ],
+      [
+        "International partner",
+        "Discuss cooperation and technology.",
+        "technology/"
+      ]
+    ],
+    "axes": [
+      [
+        "Physical",
+        "Comfort, movement and perceived effort."
+      ],
+      [
+        "Cognitive",
+        "Attention, mental workload and perceived fatigue."
+      ],
+      [
+        "Emotional",
+        "Everyday experiences of tension and ease."
+      ],
+      [
+        "Professional",
+        "Working conditions, tasks and recovery."
+      ]
+    ],
+    "descriptions": [
+      "Self-recognition and observation",
+      "Head and neck orientation",
+      "Directions for individual development",
+      "Role-specific working demands",
+      "Individual observations and records",
+      "Learning and competence",
+      "Vita Wellness interactive project",
+      "Programs for owners and teams",
+      "C0–C1 and Primordocciput",
+      "Continuity of observation; no connected account"
+    ]
+  },
+  "ru": {
+    "headline": "Свободная шея.<br>Ясная голова.",
+    "lead": "Исследуйте взаимосвязь положения головы, повседневных ощущений и направлений индивидуального развития.",
+    "zero": "Ноль — не цель.",
+    "cta": "Исследовать свои возможности",
+    "book": "Обсудить свою ситуацию",
+    "model": "Configuration / интерактивная схема",
+    "legend": "Условная ориентация головы",
+    "left": "Влево",
+    "center": "Центр",
+    "right": "Вправо",
+    "note": "Иллюстративная схема: не измерение вашей анатомии и не целевой угол.",
+    "detail": "Что показывает модель?",
+    "detailtext": "Один компонент ориентации головы относительно шеи. Индивидуальная конфигурация требует наблюдения и оценки.",
+    "routes": "Начните со своего контекста.",
+    "routelead": "Выберите маршрут и исследуйте то, что важно именно вам, без обязательной анкеты.",
+    "open": "Исследовать",
+    "potential": "Направления вашего потенциала.",
+    "potentialnote": "Это направления наблюдения, а не прогноз индивидуального результата.",
+    "products": "Одна система. Десять входов.",
+    "prior": "Практическая информация и существующие наблюдения",
+    "menu": "Меню",
+    "status": [
+      "Существующий вход RU",
+      "Иллюстрация",
+      "Концепция",
+      "Маршруты RU",
+      "Раздел",
+      "Информация",
+      "Интерактивный проект",
+      "Запрос программы",
+      "Исследования",
+      "Концепция"
+    ],
+    "roles": [
+      [
+        "Для себя",
+        "Узнайте знакомые ощущения и изучите формат первого визита.",
+        "recognition/"
+      ],
+      [
+        "Собственник бизнеса",
+        "Исследуйте личный и организационный контекст.",
+        "ru/professions/for-companies/"
+      ],
+      [
+        "Профессионал",
+        "Найдите сценарий своего рабочего дня.",
+        "ru/professions/"
+      ],
+      [
+        "Будущий специалист",
+        "Изучите архитектуру подготовки.",
+        "education/"
+      ],
+      [
+        "Корпоративный заказчик",
+        "Обсудите программу для команды.",
+        "ru/professions/for-companies/"
+      ],
+      [
+        "Исследователь",
+        "Изучите исследовательскую модель.",
+        "primordocciput/"
+      ],
+      [
+        "Технологический партнёр",
+        "Откройте демонстрацию Vita Wellness.",
+        "technology/vita-wellness/"
+      ],
+      [
+        "Международный партнёр",
+        "Обсудите сотрудничество и технологии.",
+        "technology/"
+      ]
+    ],
+    "axes": [
+      [
+        "Физический",
+        "Комфорт, движения и ощущение усилия."
+      ],
+      [
+        "Когнитивный",
+        "Внимание, умственная нагрузка и субъективная усталость."
+      ],
+      [
+        "Эмоциональный",
+        "Повседневное ощущение напряжения и лёгкости."
+      ],
+      [
+        "Профессиональный",
+        "Рабочие условия, задачи и восстановление."
+      ]
+    ],
+    "descriptions": [
+      "Самонаблюдение и узнавание",
+      "Ориентация головы и шеи",
+      "Направления индивидуального развития",
+      "Рабочие нагрузки в разных профессиях",
+      "Индивидуальные наблюдения и записи",
+      "Обучение и компетенции",
+      "Интерактивный проект Vita Wellness",
+      "Программы для собственников и команд",
+      "C0–C1 и Primordocciput",
+      "Непрерывность наблюдений; аккаунт пока не подключён"
+    ]
+  }
+}

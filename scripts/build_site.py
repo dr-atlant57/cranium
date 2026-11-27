@@ -1,5 +1,9 @@
 """Keep static pages, localized navigation and versioned preferences consistent."""
 from pathlib import Path
+import sys,runpy
+if "--product-home" in sys.argv:
+ runpy.run_path(str(Path(__file__).with_name("build_product_home.py")),run_name="__main__")
+ raise SystemExit(0)
 import json,re,posixpath,html,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'content/locales.json').read_text())
