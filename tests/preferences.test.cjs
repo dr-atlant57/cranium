@@ -4,11 +4,11 @@ const assert = require('node:assert/strict');
 const code = fs.readFileSync('app.js', 'utf8');
 function run({path='/',browser=['en-US'],saved={},dark=false,blocked=false}={}) {
  const handlers={}; const storage={...saved}; const moves=[];
- const root={dataset:{},style:{},textContent:'CONTENT MUST SURVIVE'};
+ const root={lang:'en',dataset:{},style:{},textContent:'CONTENT MUST SURVIVE'};
  const element=key=>({value:'',addEventListener:(event,callback)=>handlers[key]=callback});
  const theme=element('theme'),language=element('language');
  const media={matches:dark,addEventListener:(event,callback)=>handlers.media=callback};
- const context={document:{documentElement:root,currentScript:{src:'https://test.example/cranium/app.js'},querySelectorAll:selector=>selector==='[data-theme-select]'?[theme]:selector==='[data-language]'?[language]:[]},location:{pathname:'/cranium'+path,search:'?x=1',hash:'#section',replace:url=>moves.push(['replace',url]),assign:url=>moves.push(['assign',url])},navigator:{languages:browser,language:browser[0]},window:{matchMedia:()=>media},localStorage:{getItem:key=>{if(blocked)throw Error('blocked');return storage[key]||null;},setItem:(key,value)=>{if(blocked)throw Error('blocked');storage[key]=value;}},URL,Date};
+ const context={document:{documentElement:root,readyState:'complete',querySelector:()=>null,currentScript:{src:'https://test.example/cranium/app.js'},querySelectorAll:selector=>selector==='[data-theme-select]'?[theme]:selector==='[data-language]'?[language]:[]},location:{origin:'https://test.example',pathname:'/cranium'+path,search:'?x=1',hash:'#section',replace:url=>moves.push(['replace',url]),assign:url=>moves.push(['assign',url])},navigator:{languages:browser,language:browser[0]},window:{matchMedia:()=>media},localStorage:{getItem:key=>{if(blocked)throw Error('blocked');return storage[key]||null;},setItem:(key,value)=>{if(blocked)throw Error('blocked');storage[key]=value;}},URL,Date};
  vm.runInNewContext(code,context);
  return {root,theme,language,storage,moves,handlers,media};
 }
@@ -23,4 +23,5 @@ x.theme.value='neutral';x.handlers.theme();assert.equal(x.root.dataset.theme,'ne
 x=run({path:'/ru/',saved:{cranio_theme:'dark'},dark:false});assert.equal(x.root.dataset.theme,'dark');
 x=run({path:'/ru/',blocked:true});x.theme.value='neutral';x.handlers.theme();assert.equal(x.root.dataset.theme,'neutral');assert.equal(x.root.textContent,'CONTENT MUST SURVIVE');
 x=run({path:'/ar/how-it-works/'});x.language.value='ko';x.handlers.language();assert.equal(x.moves[0][1],'/cranium/ko/how-it-works/?x=1#section');assert.equal(x.storage.cranio_locale,'ko');
+x=run({path:'/ru/potential/'});x.language.value='ar';x.handlers.language();assert.equal(x.moves[0][1],'/cranium/ar/potential/?x=1#section');
 console.log('Preferences: browser locales, explicit URLs, saved choices, blocked storage, system theme, neutral theme and route continuity passed.');

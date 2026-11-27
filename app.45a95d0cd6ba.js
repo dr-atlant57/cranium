@@ -16,7 +16,7 @@
     const preferences = navigator.languages?.length ? navigator.languages : [navigator.language || 'en'];
     return preferences.map(tag => tag.toLowerCase().split(/[-_]/)[0]).find(lang => languages.includes(lang)) || 'en';
   };
-  const destination = lang => base + '/' + lang + (routes[lang].includes(rest) ? rest : '/') + location.search + location.hash;
+  const destination = lang => {const same=routes[lang].includes(rest);return base + '/' + lang + (same ? rest : '/') + location.search + (same ? location.hash : '');};
   // An explicit language URL wins; only unlocalized entry routes are detected.
   if (!match) {
     location.replace(destination(resolveLanguage()));
@@ -46,6 +46,14 @@
       location.assign(destination(select.value === 'auto' ? resolveLanguage() : select.value));
     });
   });
+  // Footer switches preserve the equivalent route and record the visitor's language choice.
+  document.querySelectorAll('footer a[hreflang]').forEach(a => {
+    const lang=a.getAttribute('hreflang');
+    if(!languages.includes(lang))return;
+    a.href=destination(lang);
+    if(lang===locale)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+    a.addEventListener('click',()=>write('locale',lang));
+  });
   document.querySelectorAll('[data-intake]').forEach(form => {
     const input = form.querySelector('textarea');
     const status = form.querySelector('.status');
@@ -55,7 +63,7 @@
       status.textContent = UI[locale].offline;
     });
   });
-  // CRANIO_BOOKING_WHATSAPP: human-confirmed booking channel, no form data is sent automatically.
+  // CRANIO_BOOKING_EMAIL: human-confirmed booking channel, no form data is sent automatically.
   const bookingCopy = {
     ru: ['Записаться по почте', 'Здравствуйте! Хочу записаться на сеанс CRANIO по работе с головой и шеей. Подскажите место, стоимость и доступное время.'],
     en: ['Book by email', 'Hello! I would like to book a CRANIO head and neck session. Please tell me the location, price and available times.'],
@@ -86,7 +94,7 @@
   if (navLinks && !navLinks.querySelector('[data-booking]')) {
     const link = newBookingLink('');
     link.dataset.booking = 'email';
-    if (locale==='ru'||locale==='en') {link.href=base+'/'+locale+'/start/';link.textContent=locale==='ru'?'Контакты':'Contact';link.removeAttribute('target');link.setAttribute('aria-label',link.textContent);}
+    link.href=base+'/'+locale+'/start/';link.removeAttribute('target');
     navLinks.prepend(link);
   }
   // Accessible native dropdown on small screens. Desktop links remain in the DOM for fallback.
@@ -98,7 +106,7 @@
     headerBook.rel = 'noopener noreferrer';
     headerBook.dataset.booking = 'email';
     headerBook.textContent = shortLabels[locale] || bookingText[0];
-    if (locale==='ru'||locale==='en') {headerBook.href=base+'/'+locale+'/start/';headerBook.removeAttribute('target');headerBook.textContent=locale==='ru'?'Контакты':'Contact';}
+    headerBook.href=base+'/'+locale+'/start/';headerBook.removeAttribute('target');
   }
   const headerNav = document.querySelector?.('header nav');
   if (headerNav && navLinks && !headerNav.querySelector('.mobile-menu')) {
@@ -127,12 +135,6 @@
     actions.appendChild(newBookingLink('btn dark'));
     articleLead.insertAdjacentElement('afterend', actions);
   }
-  const footerBottom = document.querySelector?.('footer .footer-bottom');
-  if (footerBottom && !document.querySelector('footer [data-rfs-corporate]')) {
-    const link = newBookingLink('');
-    link.textContent = 'rootfrontier.office@gmail.com';
-    footerBottom.appendChild(link);
-  }
   document.querySelectorAll('[data-intake]').forEach(form => {
     const input = form.querySelector('textarea');
     const status = form.querySelector('.status');
@@ -153,12 +155,8 @@
  const address=()=>'mailto:'+email;
  function init(){
   document.querySelectorAll('a[href*="wa.me/996998066098"]').forEach(a=>{let msg='';try{msg=new URL(a.href).searchParams.get('text')||''}catch(e){}a.href=address(msg);a.removeAttribute('target');if(/whatsapp|واتساب|998[\s-]*066/i.test(a.textContent))a.textContent=label;a.setAttribute('aria-label',label);});
-  const footer=document.querySelector('footer');if(footer&&!footer.querySelector('[data-rfs-corporate]')){const p=document.createElement('p');p.dataset.rfsCorporate='';p.style.cssText='text-align:center;padding:12px 16px;margin:0;font-size:.85rem;overflow-wrap:anywhere';p.append(part+' ');const a=document.createElement('a');a.href='https://rootfrontier.systems';a.textContent='ROOT FRONTIER SYSTEMS';a.style.color='inherit';p.append(a,' · ');const m=document.createElement('a');m.href=address();m.textContent=email;m.style.color='inherit';p.append(m);footer.append(p);}
-  document.querySelectorAll('[data-intake]').forEach(form=>{
-   const input=form.querySelector('textarea');if(!input)return;
-   const button=form.querySelector('button[type="submit"],button:not([type])');if(button)button.textContent=label;
-   form.addEventListener('submit',async event=>{event.preventDefault();event.stopImmediatePropagation();if(!input.value.trim()){input.focus();return;}const status=form.querySelector('.status'),button=form.querySelector('button[type="submit"],button:not([type])');if(button)button.disabled=true;if(status)status.textContent=lang==='ru'?'Отправляем заявку…':'Sending request…';try{const response=await fetch('https://formsubmit.co/ajax/rootfrontier.office@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'CRANIO SYSTEMS — website request',source_site:'cranio.systems',source_page:source,observation:input.value.trim(),submitted_at:new Date().toISOString()})});const result=await response.json();const accepted=response.ok&&(result.success===true||result.success==='true');if(!accepted)throw new Error('FormSubmit did not accept the request');if(status)status.textContent=lang==='ru'?'Заявка отправлена.':'Request sent.';form.reset();}catch(error){if(status)status.textContent=lang==='ru'?'Не удалось подтвердить отправку. Напишите на rootfrontier.office@gmail.com.':'Delivery could not be confirmed. Email rootfrontier.office@gmail.com.';console.error('CRANIO request submission failed:',error);}finally{if(button)button.disabled=false}},true);
-  });
+  const footer=document.querySelector('footer');if(footer&&!footer.querySelector('[data-rfs-corporate]')&&!(footer.querySelector('a[href^="mailto:rootfrontier.office@gmail.com"]')&&footer.querySelector('a[href*="rootfrontier.systems"]'))){const p=document.createElement('p');p.dataset.rfsCorporate='';p.style.cssText='text-align:center;padding:12px 16px;margin:0;font-size:.85rem;overflow-wrap:anywhere';p.append(part+' ');const a=document.createElement('a');a.href='https://rootfrontier.systems';a.textContent='ROOT FRONTIER SYSTEMS';a.style.color='inherit';p.append(a,' · ');const m=document.createElement('a');m.href=address();m.textContent=email;m.style.color='inherit';p.append(m);footer.append(p);}
+
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

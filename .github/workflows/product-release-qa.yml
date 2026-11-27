@@ -26,6 +26,7 @@ jobs:
         run: |
           python tests/product_home_contract.py
           node tests/product_runtime_contract.cjs
+          node tests/preferences.test.cjs
       - name: All HTML and local references
         if: always()
         run: python tests/release_audit.py
@@ -44,9 +45,12 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
+      - run: python tests/visual_product_release.py
       - run: python tests/browser_release.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: browser-audit
-          path: browser-audit.json
+          path: |
+            browser-audit.json
+            visual-qa/

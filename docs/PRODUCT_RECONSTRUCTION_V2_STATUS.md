@@ -53,3 +53,6 @@ Shared language matrix applied to existing footer language links without removin
 
 ## Phase 7 — release gate setup
 Merged main changes through 92f73d8e15e65f3d1a64ca68bf24d98c1d613280, preserving new Vita Wellness 1.6 and Electric Human appendix; updated obsolete #electric links. Default build now uses only non-destructive scoped generators. Added all-HTML audit and real Chromium release workflow, including four viewport sizes, local interaction and cross-product file exchange. Reports distinguish strict reconstructed errors from legacy warnings; both block release. Old generator and original test retained for historical comparison. No green test or deployment claimed until actual run results are available.
+
+### Final runtime and focused acceptance
+Synchronize app.js and versioned runtime; keep equivalent route in footer language switches, remove duplicate corporate footer and obsolete observation-only capture handler, use localized contact routes. Add original preference behavior tests and visual screenshots across four widths and three themes, RTL route switch and mocked contact-form checks in all 12 languages. Actual email delivery is tested separately once with synthetic content. No claim of confirmed delivery until inbox receipt.
