@@ -1,0 +1,148 @@
+{
+  "ru": {
+    "title": "От личного опыта к компетенции специалиста.",
+    "lead": "CRANIO Academy — архитектура практической подготовки. Сначала собственное понимание, затем профессиональное наблюдение и работа под руководством наставника.",
+    "stages": [
+      [
+        "Снаружи внутрь",
+        "Личный опыт",
+        "Знакомство с методом, собственными ощущениями и сравнением состояний."
+      ],
+      [
+        "Изнутри наружу",
+        "Понимание системы",
+        "Изучение концепции конфигурации, языка наблюдений, теории и практических принципов."
+      ],
+      [
+        "Снаружи",
+        "Практика под наставником",
+        "Освоение профессиональных компетенций под наблюдением наставника, с обратной связью и оценкой готовности."
+      ]
+    ],
+    "competences": [
+      [
+        "Наблюдение",
+        "Различать наблюдаемое, измеренное, сообщённое и исследовательские предположения."
+      ],
+      [
+        "Конфигурация",
+        "Описывать ориентацию головы и контекст без неподтверждённой диагностики."
+      ],
+      [
+        "Коммуникация",
+        "Согласовывать запрос, границы компетенции, безопасность и добровольное участие."
+      ],
+      [
+        "Практика",
+        "Осваивать практическую работу с наставником, а не по инструкции на сайте."
+      ],
+      [
+        "Верификация",
+        "Сравнивать наблюдения в сопоставимых условиях и фиксировать динамику."
+      ],
+      [
+        "Непрерывность",
+        "Вести историю наблюдений с согласия участника и соблюдать конфиденциальность."
+      ]
+    ],
+    "stageHeading": "Три этапа подготовки",
+    "competenceHeading": "Матрица компетенций",
+    "choose": "Выберите свой вход",
+    "entries": [
+      [
+        "Я знакомлюсь с методом",
+        "Начните с личного опыта и наблюдения.",
+        "../your-cranium/"
+      ],
+      [
+        "Я практикующий специалист",
+        "Изучите принципы метода и обсудите индивидуальный формат.",
+        "../method/"
+      ],
+      [
+        "Я представляю организацию",
+        "Обсудите подготовку внутреннего специалиста.",
+        "../professions/for-companies/"
+      ]
+    ],
+    "note": "На сайте представлена архитектура подготовки, а не дистанционный курс, лицензия или подтверждённая сертификационная программа. Условия, требования, доступность наставника и сроки уточняются индивидуально.",
+    "cta": "Обсудить обучение",
+    "legacy": "Существующие образовательные материалы",
+    "modules": "20 специализаций и 137 параметров",
+    "modulesNote": "Русскоязычный реестр направлений.",
+    "status": "Архитектура подготовки · запрос участия"
+  },
+  "en": {
+    "title": "From personal experience to professional competence.",
+    "lead": "CRANIO Academy is a practical learning architecture: personal understanding, professional observation and supervised practice.",
+    "stages": [
+      [
+        "Outside in",
+        "Personal experience",
+        "Become familiar with the method, your own perceptions and comparison of states."
+      ],
+      [
+        "Inside out",
+        "System understanding",
+        "Explore configuration, the language of observation, theory and practical principles."
+      ],
+      [
+        "Outside",
+        "Mentored practice",
+        "Develop professional competencies under supervision, with feedback and assessment of readiness."
+      ]
+    ],
+    "competences": [
+      [
+        "Observation",
+        "Distinguish observed, measured, reported and exploratory concepts."
+      ],
+      [
+        "Configuration",
+        "Describe head orientation and context without unsupported diagnosis."
+      ],
+      [
+        "Communication",
+        "Agree on needs, scope, safety and voluntary participation."
+      ],
+      [
+        "Practice",
+        "Develop practical competencies under supervision, not from website instructions."
+      ],
+      [
+        "Verification",
+        "Compare observations under comparable conditions and record changes."
+      ],
+      [
+        "Continuity",
+        "Maintain observation history with consent and respect confidentiality."
+      ]
+    ],
+    "stageHeading": "Three stages of preparation",
+    "competenceHeading": "Competence architecture",
+    "choose": "Choose your entry point",
+    "entries": [
+      [
+        "I am exploring the method",
+        "Start with personal experience and observation.",
+        "../your-cranium/"
+      ],
+      [
+        "I am a practitioner",
+        "Explore the method and discuss an individual format.",
+        "../method/"
+      ],
+      [
+        "I represent an organization",
+        "Discuss preparation of an internal specialist (Russian corporate page).",
+        "../../ru/professions/for-companies/"
+      ]
+    ],
+    "note": "The website presents the learning architecture, not an online course, licence or confirmed certification program. Requirements, mentor availability, timing and terms are discussed individually.",
+    "cta": "Discuss training",
+    "legacy": "Existing educational materials",
+    "modules": "20 specializations and 137 parameters",
+    "modulesNote": "Russian-language reference materials.",
+    "status": "Learning architecture · enquiry"
+  }
+}
